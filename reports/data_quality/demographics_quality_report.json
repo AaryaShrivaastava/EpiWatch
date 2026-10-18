@@ -1,0 +1,139 @@
+{
+  "dataset": "demographics",
+  "rows": 1,
+  "columns": 22,
+  "column_names": [
+    "region",
+    "state",
+    "country",
+    "area_sq_km",
+    "population_2011",
+    "population_density_per_sq_km",
+    "urban_population_2011",
+    "rural_population_2011",
+    "male_population_2011",
+    "female_population_2011",
+    "sex_ratio_females_per_1000_males",
+    "literacy_rate_percent",
+    "age_0_6_percent",
+    "age_7_14_percent",
+    "age_15_24_percent",
+    "age_25_44_percent",
+    "age_45_59_percent",
+    "age_60_plus_percent",
+    "urbanization_percent",
+    "avg_household_size",
+    "housing_crowding_index",
+    "population_growth_index_annual"
+  ],
+  "validation_status": "PASSED",
+  "schema_issues": [
+    "WARNING: Unexpected columns found: ['state', 'country', 'urban_population_2011', 'rural_population_2011', 'male_population_2011', 'female_population_2011', 'sex_ratio_females_per_1000_males', 'literacy_rate_percent', 'age_0_6_percent', 'age_7_14_percent', 'age_15_24_percent', 'age_25_44_percent', 'age_45_59_percent', 'age_60_plus_percent', 'avg_household_size', 'housing_crowding_index', 'population_growth_index_annual']"
+  ],
+  "data_type_issues": [],
+  "missing_values": {},
+  "total_missing_cells": 0,
+  "duplicate_rows": 0,
+  "invalid_value_issues": [],
+  "invalid_rows_count": 0,
+  "date_range": null,
+  "unique_regions": 1,
+  "unique_diseases": 0,
+  "numerical_summary": {
+    "area_sq_km": {
+      "min": 2772.0,
+      "max": 2772.0,
+      "mean": 2772.0
+    },
+    "population_2011": {
+      "min": 2368145.0,
+      "max": 2368145.0,
+      "mean": 2368145.0
+    },
+    "population_density_per_sq_km": {
+      "min": 855.0,
+      "max": 855.0,
+      "mean": 855.0
+    },
+    "urban_population_2011": {
+      "min": 1917051.0,
+      "max": 1917051.0,
+      "mean": 1917051.0
+    },
+    "rural_population_2011": {
+      "min": 454010.0,
+      "max": 454010.0,
+      "mean": 454010.0
+    },
+    "male_population_2011": {
+      "min": 1239378.0,
+      "max": 1239378.0,
+      "mean": 1239378.0
+    },
+    "female_population_2011": {
+      "min": 1128767.0,
+      "max": 1128767.0,
+      "mean": 1128767.0
+    },
+    "sex_ratio_females_per_1000_males": {
+      "min": 918.0,
+      "max": 918.0,
+      "mean": 918.0
+    },
+    "literacy_rate_percent": {
+      "min": 80.37,
+      "max": 80.37,
+      "mean": 80.37
+    },
+    "age_0_6_percent": {
+      "min": 12.2,
+      "max": 12.2,
+      "mean": 12.2
+    },
+    "age_7_14_percent": {
+      "min": 15.4,
+      "max": 15.4,
+      "mean": 15.4
+    },
+    "age_15_24_percent": {
+      "min": 20.3,
+      "max": 20.3,
+      "mean": 20.3
+    },
+    "age_25_44_percent": {
+      "min": 30.1,
+      "max": 30.1,
+      "mean": 30.1
+    },
+    "age_45_59_percent": {
+      "min": 13.0,
+      "max": 13.0,
+      "mean": 13.0
+    },
+    "age_60_plus_percent": {
+      "min": 9.0,
+      "max": 9.0,
+      "mean": 9.0
+    },
+    "urbanization_percent": {
+      "min": 80.85,
+      "max": 80.85,
+      "mean": 80.85
+    },
+    "avg_household_size": {
+      "min": 4.4,
+      "max": 4.4,
+      "mean": 4.4
+    },
+    "housing_crowding_index": {
+      "min": 0.56,
+      "max": 0.56,
+      "mean": 0.56
+    },
+    "population_growth_index_annual": {
+      "min": 1.8,
+      "max": 1.8,
+      "mean": 1.8
+    }
+  }
+}

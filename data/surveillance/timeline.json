@@ -1,0 +1,554 @@
+[
+  {
+    "id": "EVT-20261017140404021",
+    "timestamp": "2026-10-17T14:04:04.022001",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261017-140403 finished: 27400 records evaluated, 2 new findings, 2 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261017140403993",
+    "timestamp": "2026-10-17T14:04:03.993386",
+    "event_type": "recommendations_updated",
+    "title": "Action Directives Updated",
+    "details": "Published 1 prioritized public-health directives.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261017140403934",
+    "timestamp": "2026-10-17T14:04:03.934139",
+    "event_type": "alerts_updated",
+    "title": "Alerts Synchronized",
+    "details": "Generated 2 active alerts with deduplication guardrails.",
+    "status": "warning"
+  },
+  {
+    "id": "EVT-20261017140403873",
+    "timestamp": "2026-10-17T14:04:03.873066",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 2 new epidemiological anomalies across monitored regions.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261017140403721",
+    "timestamp": "2026-10-17T14:04:03.721335",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261017140403316",
+    "timestamp": "2026-10-17T14:04:03.316760",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261017140403052",
+    "timestamp": "2026-10-17T14:04:03.052780",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261017-140403 triggered via scheduled_initial.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261017140358032",
+    "timestamp": "2026-10-17T14:03:58.032350",
+    "event_type": "worker_started",
+    "title": "Surveillance Worker Started",
+    "details": "Background surveillance scheduler activated.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015100235618",
+    "timestamp": "2026-10-15T10:02:35.618273",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-100234 finished: 27400 records evaluated, 0 new findings, 0 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015100235582",
+    "timestamp": "2026-10-15T10:02:35.582326",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 0 new epidemiological anomalies across monitored regions.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015100235454",
+    "timestamp": "2026-10-15T10:02:35.454500",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015100235084",
+    "timestamp": "2026-10-15T10:02:35.084982",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015100234948",
+    "timestamp": "2026-10-15T10:02:34.948702",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-100234 triggered via scheduled.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015095234621",
+    "timestamp": "2026-10-15T09:52:34.621890",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-095234 finished: 27400 records evaluated, 0 new findings, 0 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015095234596",
+    "timestamp": "2026-10-15T09:52:34.596650",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 0 new epidemiological anomalies across monitored regions.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015095234502",
+    "timestamp": "2026-10-15T09:52:34.502467",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015095234169",
+    "timestamp": "2026-10-15T09:52:34.169288",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015095234060",
+    "timestamp": "2026-10-15T09:52:34.060704",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-095234 triggered via scheduled.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015094233664",
+    "timestamp": "2026-10-15T09:42:33.664377",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-094232 finished: 27400 records evaluated, 0 new findings, 0 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015094233639",
+    "timestamp": "2026-10-15T09:42:33.639104",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 0 new epidemiological anomalies across monitored regions.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015094233508",
+    "timestamp": "2026-10-15T09:42:33.508352",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015094233158",
+    "timestamp": "2026-10-15T09:42:33.158224",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015094232989",
+    "timestamp": "2026-10-15T09:42:32.989703",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-094232 triggered via scheduled_initial.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015094227976",
+    "timestamp": "2026-10-15T09:42:27.976333",
+    "event_type": "worker_started",
+    "title": "Surveillance Worker Started",
+    "details": "Background surveillance scheduler activated.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015031121757",
+    "timestamp": "2026-10-15T03:11:21.757300",
+    "event_type": "worker_stopped",
+    "title": "Surveillance Worker Stopped",
+    "details": "Background surveillance scheduler deactivated.",
+    "status": "warning"
+  },
+  {
+    "id": "EVT-20261015031038922",
+    "timestamp": "2026-10-15T03:10:38.923002",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-031038 finished: 27400 records evaluated, 0 new findings, 0 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015031038901",
+    "timestamp": "2026-10-15T03:10:38.901702",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 0 new epidemiological anomalies across monitored regions.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015031038838",
+    "timestamp": "2026-10-15T03:10:38.838050",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015031038647",
+    "timestamp": "2026-10-15T03:10:38.647101",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015031038574",
+    "timestamp": "2026-10-15T03:10:38.574989",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-031038 triggered via overlap_test.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015031038492",
+    "timestamp": "2026-10-15T03:10:38.492687",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-031038 finished: 27400 records evaluated, 0 new findings, 0 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015031038476",
+    "timestamp": "2026-10-15T03:10:38.476888",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 0 new epidemiological anomalies across monitored regions.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015031038414",
+    "timestamp": "2026-10-15T03:10:38.414062",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015031038223",
+    "timestamp": "2026-10-15T03:10:38.223402",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015031038154",
+    "timestamp": "2026-10-15T03:10:38.154476",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-031038 triggered via manual_api_trigger.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015031038116",
+    "timestamp": "2026-10-15T03:10:38.116971",
+    "event_type": "worker_started",
+    "title": "Surveillance Worker Started",
+    "details": "Background surveillance scheduler activated.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015031038082",
+    "timestamp": "2026-10-15T03:10:38.082380",
+    "event_type": "worker_stopped",
+    "title": "Surveillance Worker Stopped",
+    "details": "Background surveillance scheduler deactivated.",
+    "status": "warning"
+  },
+  {
+    "id": "EVT-20261015030533284",
+    "timestamp": "2026-10-15T03:05:33.284557",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-030532 finished: 27400 records evaluated, 0 new findings, 0 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030533265",
+    "timestamp": "2026-10-15T03:05:33.265864",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 0 new epidemiological anomalies across monitored regions.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030533205",
+    "timestamp": "2026-10-15T03:05:33.205377",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030532992",
+    "timestamp": "2026-10-15T03:05:32.992518",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030532910",
+    "timestamp": "2026-10-15T03:05:32.910311",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-030532 triggered via scheduled_initial.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030527898",
+    "timestamp": "2026-10-15T03:05:27.898266",
+    "event_type": "worker_started",
+    "title": "Surveillance Worker Started",
+    "details": "Background surveillance scheduler activated.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030444091",
+    "timestamp": "2026-10-15T03:04:44.092009",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-030443 finished: 27400 records evaluated, 0 new findings, 0 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030444074",
+    "timestamp": "2026-10-15T03:04:44.074390",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 0 new epidemiological anomalies across monitored regions.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030444017",
+    "timestamp": "2026-10-15T03:04:44.018038",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030443780",
+    "timestamp": "2026-10-15T03:04:43.780520",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030443708",
+    "timestamp": "2026-10-15T03:04:43.708989",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-030443 triggered via scheduled_initial.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030438706",
+    "timestamp": "2026-10-15T03:04:38.706622",
+    "event_type": "worker_started",
+    "title": "Surveillance Worker Started",
+    "details": "Background surveillance scheduler activated.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030438645",
+    "timestamp": "2026-10-15T03:04:38.645789",
+    "event_type": "worker_stopped",
+    "title": "Surveillance Worker Stopped",
+    "details": "Background surveillance scheduler deactivated.",
+    "status": "warning"
+  },
+  {
+    "id": "EVT-20261015030417993",
+    "timestamp": "2026-10-15T03:04:17.993234",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-030417 finished: 27400 records evaluated, 0 new findings, 0 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030417974",
+    "timestamp": "2026-10-15T03:04:17.974895",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 0 new epidemiological anomalies across monitored regions.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030417914",
+    "timestamp": "2026-10-15T03:04:17.914159",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030417708",
+    "timestamp": "2026-10-15T03:04:17.708767",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030417630",
+    "timestamp": "2026-10-15T03:04:17.630640",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-030417 triggered via manual_api_trigger.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030401644",
+    "timestamp": "2026-10-15T03:04:01.644236",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-030401 finished: 27400 records evaluated, 0 new findings, 0 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030401628",
+    "timestamp": "2026-10-15T03:04:01.628548",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 0 new epidemiological anomalies across monitored regions.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030401570",
+    "timestamp": "2026-10-15T03:04:01.570888",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030401331",
+    "timestamp": "2026-10-15T03:04:01.331069",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030401240",
+    "timestamp": "2026-10-15T03:04:01.240738",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-030401 triggered via scheduled_initial.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030356231",
+    "timestamp": "2026-10-15T03:03:56.231713",
+    "event_type": "worker_started",
+    "title": "Surveillance Worker Started",
+    "details": "Background surveillance scheduler activated.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030257999",
+    "timestamp": "2026-10-15T03:02:57.999577",
+    "event_type": "scan_completed",
+    "title": "Surveillance Scan Complete",
+    "details": "Scan SCAN-20261015-030257 finished: 27400 records evaluated, 2 new findings, 2 alerts synchronized.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030257982",
+    "timestamp": "2026-10-15T03:02:57.982715",
+    "event_type": "recommendations_updated",
+    "title": "Action Directives Updated",
+    "details": "Published 1 prioritized public-health directives.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030257949",
+    "timestamp": "2026-10-15T03:02:57.949083",
+    "event_type": "alerts_updated",
+    "title": "Alerts Synchronized",
+    "details": "Generated 2 active alerts with deduplication guardrails.",
+    "status": "warning"
+  },
+  {
+    "id": "EVT-20261015030257921",
+    "timestamp": "2026-10-15T03:02:57.921540",
+    "event_type": "findings_recorded",
+    "title": "Findings Recorded",
+    "details": "Identified 2 new epidemiological anomalies across monitored regions.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030257858",
+    "timestamp": "2026-10-15T03:02:57.858641",
+    "event_type": "baseline_evaluation",
+    "title": "Regional Baselines Evaluated",
+    "details": "Evaluating 28-day moving baselines across 5 regions and 5 diseases.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030257604",
+    "timestamp": "2026-10-15T03:02:57.604426",
+    "event_type": "data_validation",
+    "title": "Dataset Validated",
+    "details": "Loaded 27400 records from epidemiological_clean.csv. Schema and types verified.",
+    "status": "success"
+  },
+  {
+    "id": "EVT-20261015030257527",
+    "timestamp": "2026-10-15T03:02:57.527770",
+    "event_type": "scan_started",
+    "title": "Surveillance Scan Initiated",
+    "details": "Scan SCAN-20261015-030257 triggered via scheduled_initial.",
+    "status": "info"
+  },
+  {
+    "id": "EVT-20261015030252529",
+    "timestamp": "2026-10-15T03:02:52.529544",
+    "event_type": "worker_started",
+    "title": "Surveillance Worker Started",
+    "details": "Background surveillance scheduler activated.",
+    "status": "success"
+  }
+]

@@ -1,0 +1,27 @@
+scan_interval_seconds: 600
+surveillance:
+  auto_start: true
+  cooldown_hours: 24
+  monitored_diseases:
+  - COVID-19
+  - Dengue
+  - Malaria
+  - Influenza
+  - Typhoid
+  monitored_regions:
+  - Bhopal
+  - Indore
+  - Jabalpur
+  - Gwalior
+  - Ujjain
+  outputs:
+    data_dir: data/surveillance
+  scan_interval_seconds: 600
+  thresholds:
+    growth_rate_critical: 0.35
+    growth_rate_warning: 0.15
+    hospital_stress_warning: 50.0
+    incidence_rate_warning: 50.0
+    integrated_risk_warning: 60.0
+    z_score_critical: 3.0
+    z_score_warning: 2.0

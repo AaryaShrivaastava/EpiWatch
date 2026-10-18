@@ -1,0 +1,30 @@
+{
+  "feature_columns": [
+    "new_cases",
+    "active_cases",
+    "deaths",
+    "hospitalizations",
+    "icu_admissions",
+    "tests",
+    "test_positivity_rate_percent",
+    "cases_7d_avg",
+    "cases_14d_avg",
+    "cases_28d_avg",
+    "growth_rate_7d",
+    "growth_rate_14d",
+    "incidence_per_100k",
+    "case_fatality_rate",
+    "hospitalization_rate",
+    "temperature_c",
+    "humidity_percent",
+    "rainfall_mm",
+    "air_quality_index",
+    "rainfall_lag_7",
+    "humidity_lag_7",
+    "rainfall_7d",
+    "month",
+    "week",
+    "quarter"
+  ],
+  "target_column": "potential_anomaly"
+}

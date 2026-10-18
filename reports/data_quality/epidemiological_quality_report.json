@@ -1,0 +1,76 @@
+{
+  "dataset": "epidemiological",
+  "rows": 9130,
+  "columns": 11,
+  "column_names": [
+    "date",
+    "region",
+    "disease",
+    "new_cases",
+    "active_cases",
+    "recovered",
+    "deaths",
+    "hospitalizations",
+    "icu_admissions",
+    "tests",
+    "test_positivity_rate_percent"
+  ],
+  "validation_status": "PASSED",
+  "schema_issues": [
+    "WARNING: Unexpected columns found: ['test_positivity_rate_percent']"
+  ],
+  "data_type_issues": [],
+  "missing_values": {},
+  "total_missing_cells": 0,
+  "duplicate_rows": 0,
+  "invalid_value_issues": [],
+  "invalid_rows_count": 0,
+  "date_range": {
+    "min_date": "2021-01-01",
+    "max_date": "2025-12-31"
+  },
+  "unique_regions": 1,
+  "unique_diseases": 5,
+  "numerical_summary": {
+    "new_cases": {
+      "min": 0.0,
+      "max": 81.0,
+      "mean": 17.1761
+    },
+    "active_cases": {
+      "min": 3.0,
+      "max": 589.0,
+      "mean": 133.6786
+    },
+    "recovered": {
+      "min": 2.0,
+      "max": 415.0,
+      "mean": 94.131
+    },
+    "deaths": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.0699
+    },
+    "hospitalizations": {
+      "min": 0.0,
+      "max": 10.0,
+      "mean": 1.0463
+    },
+    "icu_admissions": {
+      "min": 0.0,
+      "max": 3.0,
+      "mean": 0.0821
+    },
+    "tests": {
+      "min": 51.0,
+      "max": 1594.0,
+      "mean": 458.2613
+    },
+    "test_positivity_rate_percent": {
+      "min": 0.0,
+      "max": 8.88,
+      "mean": 3.6603
+    }
+  }
+}

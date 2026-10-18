@@ -1,0 +1,146 @@
+[
+  {
+    "finding_id": "FND-20261017-BHO-INF-01",
+    "timestamp": "2026-10-17T14:04:03.761835",
+    "region": "Bhopal",
+    "disease": "Influenza",
+    "triggering_metric": "growth_rate_7d",
+    "observed_value": 0.173,
+    "historical_baseline": {
+      "baseline_mean": 40.96,
+      "baseline_std": 11.25,
+      "window_days": 28,
+      "upper_threshold_2std": 63.47,
+      "critical_threshold_3std": 74.72
+    },
+    "threshold": 2.0,
+    "detection_method": "Multi-Signal Rolling Z-Score & Moving Baseline",
+    "severity": "Moderate",
+    "supporting_evidence": {
+      "recent_daily_cases": 58.0,
+      "7d_growth_rate_percent": 17.3,
+      "incidence_per_100k": 2.45,
+      "population": 2368145.0,
+      "hospital_stress_index": 3.39954974747978,
+      "environmental_context": {
+        "temp_c": 18.49,
+        "humidity": 70.23,
+        "rainfall_mm": 0.0,
+        "aqi": 213.8
+      }
+    },
+    "recommended_next_step": "Invoke 14-day trajectory forecast and check ICU bed utilization.",
+    "related_alert_id": "ALT-20261017-BHO-01",
+    "data_provenance": "SYNTHETIC_DEMO (Controlled biological models) + Census 2011 Demographics",
+    "status": "unconfirmed_signal",
+    "summary": "Bhopal shows concerning Influenza acceleration: current daily cases (58) exceed 28-day historical baseline (mean=41.0, std=11.3) with Z-score 1.51\u03c3 and 7-day growth rate 17.3%. Incident rate: 2.45 per 100k."
+  },
+  {
+    "finding_id": "FND-20261017-IND-INF-02",
+    "timestamp": "2026-10-17T14:04:03.761835",
+    "region": "Indore",
+    "disease": "Influenza",
+    "triggering_metric": "rolling_z_score",
+    "observed_value": 2.467,
+    "historical_baseline": {
+      "baseline_mean": 57.71,
+      "baseline_std": 13.49,
+      "window_days": 28,
+      "upper_threshold_2std": 84.7,
+      "critical_threshold_3std": 98.19
+    },
+    "threshold": 2.0,
+    "detection_method": "Multi-Signal Rolling Z-Score & Moving Baseline",
+    "severity": "High",
+    "supporting_evidence": {
+      "recent_daily_cases": 91.0,
+      "7d_growth_rate_percent": 16.9,
+      "incidence_per_100k": 2.78,
+      "population": 3276697.0,
+      "hospital_stress_index": 1.0,
+      "environmental_context": {
+        "temp_c": 18.49,
+        "humidity": 70.23,
+        "rainfall_mm": 0.0,
+        "aqi": 213.8
+      }
+    },
+    "recommended_next_step": "Invoke 14-day trajectory forecast and check ICU bed utilization.",
+    "related_alert_id": "ALT-20261017-IND-02",
+    "data_provenance": "SYNTHETIC_DEMO (Controlled biological models) + Census 2011 Demographics",
+    "status": "unconfirmed_signal",
+    "summary": "Indore shows concerning Influenza acceleration: current daily cases (91) exceed 28-day historical baseline (mean=57.7, std=13.5) with Z-score 2.47\u03c3 and 7-day growth rate 16.9%. Incident rate: 2.78 per 100k."
+  },
+  {
+    "finding_id": "FND-20261015-BHO-INF-01",
+    "timestamp": "2026-10-15T03:02:57.878302",
+    "region": "Bhopal",
+    "disease": "Influenza",
+    "triggering_metric": "growth_rate_7d",
+    "observed_value": 0.173,
+    "historical_baseline": {
+      "baseline_mean": 40.96,
+      "baseline_std": 11.25,
+      "window_days": 28,
+      "upper_threshold_2std": 63.47,
+      "critical_threshold_3std": 74.72
+    },
+    "threshold": 2.0,
+    "detection_method": "Multi-Signal Rolling Z-Score & Moving Baseline",
+    "severity": "Moderate",
+    "supporting_evidence": {
+      "recent_daily_cases": 58.0,
+      "7d_growth_rate_percent": 17.3,
+      "incidence_per_100k": 2.45,
+      "population": 2368145.0,
+      "hospital_stress_index": 3.39954974747978,
+      "environmental_context": {
+        "temp_c": 18.49,
+        "humidity": 70.23,
+        "rainfall_mm": 0.0,
+        "aqi": 213.8
+      }
+    },
+    "recommended_next_step": "Invoke 14-day trajectory forecast and check ICU bed utilization.",
+    "related_alert_id": "ALT-20261015-BHO-01",
+    "data_provenance": "SYNTHETIC_DEMO (Controlled biological models) + Census 2011 Demographics",
+    "status": "unconfirmed_signal",
+    "summary": "Bhopal shows concerning Influenza acceleration: current daily cases (58) exceed 28-day historical baseline (mean=41.0, std=11.3) with Z-score 1.51\u03c3 and 7-day growth rate 17.3%. Incident rate: 2.45 per 100k."
+  },
+  {
+    "finding_id": "FND-20261015-IND-INF-02",
+    "timestamp": "2026-10-15T03:02:57.878302",
+    "region": "Indore",
+    "disease": "Influenza",
+    "triggering_metric": "rolling_z_score",
+    "observed_value": 2.467,
+    "historical_baseline": {
+      "baseline_mean": 57.71,
+      "baseline_std": 13.49,
+      "window_days": 28,
+      "upper_threshold_2std": 84.7,
+      "critical_threshold_3std": 98.19
+    },
+    "threshold": 2.0,
+    "detection_method": "Multi-Signal Rolling Z-Score & Moving Baseline",
+    "severity": "High",
+    "supporting_evidence": {
+      "recent_daily_cases": 91.0,
+      "7d_growth_rate_percent": 16.9,
+      "incidence_per_100k": 2.78,
+      "population": 3276697.0,
+      "hospital_stress_index": 1.0,
+      "environmental_context": {
+        "temp_c": 18.49,
+        "humidity": 70.23,
+        "rainfall_mm": 0.0,
+        "aqi": 213.8
+      }
+    },
+    "recommended_next_step": "Invoke 14-day trajectory forecast and check ICU bed utilization.",
+    "related_alert_id": "ALT-20261015-IND-02",
+    "data_provenance": "SYNTHETIC_DEMO (Controlled biological models) + Census 2011 Demographics",
+    "status": "unconfirmed_signal",
+    "summary": "Indore shows concerning Influenza acceleration: current daily cases (91) exceed 28-day historical baseline (mean=57.7, std=13.5) with Z-score 2.47\u03c3 and 7-day growth rate 16.9%. Incident rate: 2.78 per 100k."
+  }
+]

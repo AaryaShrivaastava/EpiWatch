@@ -1,0 +1,1256 @@
+{
+  "epidemiological": {
+    "dataset": "epidemiological",
+    "rows": 9130,
+    "columns": 12,
+    "column_names": [
+      "date",
+      "region",
+      "disease",
+      "new_cases",
+      "active_cases",
+      "recovered",
+      "deaths",
+      "hospitalizations",
+      "icu_admissions",
+      "tests",
+      "test_positivity_rate_percent",
+      "data_status"
+    ],
+    "total_missing_cells": 0,
+    "duplicate_rows": 0,
+    "date_range": {
+      "min_date": "2021-01-01",
+      "max_date": "2025-12-31"
+    },
+    "unique_regions": 1,
+    "unique_diseases": 5,
+    "missing_by_column": {
+      "date": 0,
+      "region": 0,
+      "disease": 0,
+      "new_cases": 0,
+      "active_cases": 0,
+      "recovered": 0,
+      "deaths": 0,
+      "hospitalizations": 0,
+      "icu_admissions": 0,
+      "tests": 0,
+      "test_positivity_rate_percent": 0,
+      "data_status": 0
+    },
+    "numerical_stats": {
+      "new_cases": {
+        "min": 0.0,
+        "max": 81.0,
+        "mean": 17.1761,
+        "median": 16.0,
+        "std": 9.7755
+      },
+      "active_cases": {
+        "min": 3.0,
+        "max": 589.0,
+        "mean": 133.6786,
+        "median": 120.0,
+        "std": 69.7363
+      },
+      "recovered": {
+        "min": 2.0,
+        "max": 415.0,
+        "mean": 94.131,
+        "median": 84.0,
+        "std": 49.1718
+      },
+      "deaths": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 0.0699,
+        "median": 0.0,
+        "std": 0.2688
+      },
+      "hospitalizations": {
+        "min": 0.0,
+        "max": 10.0,
+        "mean": 1.0463,
+        "median": 1.0,
+        "std": 1.1634
+      },
+      "icu_admissions": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 0.0821,
+        "median": 0.0,
+        "std": 0.2983
+      },
+      "tests": {
+        "min": 51.0,
+        "max": 1594.0,
+        "mean": 458.2613,
+        "median": 430.0,
+        "std": 193.5699
+      },
+      "test_positivity_rate_percent": {
+        "min": 0.0,
+        "max": 8.88,
+        "mean": 3.6603,
+        "median": 3.56,
+        "std": 1.335
+      }
+    },
+    "categorical_stats": {
+      "region": {
+        "unique_count": 1,
+        "top_value": "Bhopal",
+        "values": {
+          "Bhopal": 9130
+        }
+      },
+      "disease": {
+        "unique_count": 5,
+        "top_value": "COVID-19",
+        "values": {
+          "COVID-19": 1826,
+          "Dengue": 1826,
+          "Influenza": 1826,
+          "Malaria": 1826,
+          "Typhoid": 1826
+        }
+      },
+      "data_status": {
+        "unique_count": 1,
+        "top_value": "SOURCE_CALIBRATED_SYNTHETIC",
+        "values": {
+          "SOURCE_CALIBRATED_SYNTHETIC": 9130
+        }
+      }
+    }
+  },
+  "environmental": {
+    "dataset": "environmental",
+    "rows": 1826,
+    "columns": 12,
+    "column_names": [
+      "date",
+      "region",
+      "temperature_c",
+      "rainfall_mm",
+      "humidity_percent",
+      "water_accumulation_index",
+      "air_quality_index",
+      "wind_speed_kmh",
+      "solar_radiation_kwh_m2",
+      "surface_water_index",
+      "pollution_index",
+      "data_status"
+    ],
+    "total_missing_cells": 0,
+    "duplicate_rows": 0,
+    "date_range": {
+      "min_date": "2021-01-01",
+      "max_date": "2025-12-31"
+    },
+    "unique_regions": 1,
+    "unique_diseases": 0,
+    "missing_by_column": {
+      "date": 0,
+      "region": 0,
+      "temperature_c": 0,
+      "rainfall_mm": 0,
+      "humidity_percent": 0,
+      "water_accumulation_index": 0,
+      "air_quality_index": 0,
+      "wind_speed_kmh": 0,
+      "solar_radiation_kwh_m2": 0,
+      "surface_water_index": 0,
+      "pollution_index": 0,
+      "data_status": 0
+    },
+    "numerical_stats": {
+      "temperature_c": {
+        "min": 14.75,
+        "max": 39.05,
+        "mean": 26.3131,
+        "median": 26.26,
+        "std": 4.6922
+      },
+      "rainfall_mm": {
+        "min": 0.0,
+        "max": 39.21,
+        "mean": 5.6122,
+        "median": 0.0,
+        "std": 10.6845
+      },
+      "humidity_percent": {
+        "min": 30.35,
+        "max": 93.76,
+        "mean": 61.7239,
+        "median": 59.115,
+        "std": 11.7306
+      },
+      "water_accumulation_index": {
+        "min": 0.705,
+        "max": 2.695,
+        "mean": 1.4026,
+        "median": 1.2655,
+        "std": 0.4231
+      },
+      "air_quality_index": {
+        "min": 42.5,
+        "max": 224.1,
+        "mean": 123.4794,
+        "median": 118.4,
+        "std": 30.6981
+      },
+      "wind_speed_kmh": {
+        "min": 0.5,
+        "max": 15.05,
+        "mean": 6.9605,
+        "median": 6.94,
+        "std": 2.2357
+      },
+      "solar_radiation_kwh_m2": {
+        "min": 3.35,
+        "max": 7.93,
+        "mean": 5.617,
+        "median": 5.68,
+        "std": 0.8485
+      },
+      "surface_water_index": {
+        "min": 0.05,
+        "max": 1.5,
+        "mean": 0.658,
+        "median": 0.5575,
+        "std": 0.3361
+      },
+      "pollution_index": {
+        "min": 10.0,
+        "max": 140.13,
+        "mean": 68.522,
+        "median": 66.81,
+        "std": 19.1967
+      }
+    },
+    "categorical_stats": {
+      "region": {
+        "unique_count": 1,
+        "top_value": "Bhopal",
+        "values": {
+          "Bhopal": 1826
+        }
+      },
+      "data_status": {
+        "unique_count": 1,
+        "top_value": "SOURCE_CALIBRATED_SYNTHETIC",
+        "values": {
+          "SOURCE_CALIBRATED_SYNTHETIC": 1826
+        }
+      }
+    }
+  },
+  "healthcare": {
+    "dataset": "healthcare",
+    "rows": 60,
+    "columns": 13,
+    "column_names": [
+      "month",
+      "region",
+      "hospital_count",
+      "hospital_beds",
+      "available_oxygen_percent",
+      "icu_beds",
+      "doctors",
+      "testing_capacity_tests_per_day",
+      "medicine_availability_percent",
+      "emergency_units",
+      "hospital_mortality_rate_percent",
+      "ambulances_available",
+      "data_status"
+    ],
+    "total_missing_cells": 0,
+    "duplicate_rows": 0,
+    "date_range": {
+      "min_date": "2021-01-01",
+      "max_date": "2025-12-01"
+    },
+    "unique_regions": 1,
+    "unique_diseases": 0,
+    "missing_by_column": {
+      "month": 0,
+      "region": 0,
+      "hospital_count": 0,
+      "hospital_beds": 0,
+      "available_oxygen_percent": 0,
+      "icu_beds": 0,
+      "doctors": 0,
+      "testing_capacity_tests_per_day": 0,
+      "medicine_availability_percent": 0,
+      "emergency_units": 0,
+      "hospital_mortality_rate_percent": 0,
+      "ambulances_available": 0,
+      "data_status": 0
+    },
+    "numerical_stats": {
+      "hospital_count": {
+        "min": 94.0,
+        "max": 119.0,
+        "mean": 105.3333,
+        "median": 105.0,
+        "std": 6.0665
+      },
+      "hospital_beds": {
+        "min": 6881.0,
+        "max": 8618.0,
+        "mean": 7761.4167,
+        "median": 7751.5,
+        "std": 449.7684
+      },
+      "available_oxygen_percent": {
+        "min": 67.8,
+        "max": 88.1,
+        "mean": 78.3767,
+        "median": 78.65,
+        "std": 5.2337
+      },
+      "icu_beds": {
+        "min": 470.0,
+        "max": 662.0,
+        "mean": 565.8833,
+        "median": 567.5,
+        "std": 52.5912
+      },
+      "doctors": {
+        "min": 3061.0,
+        "max": 4292.0,
+        "mean": 3697.0167,
+        "median": 3761.5,
+        "std": 356.5141
+      },
+      "testing_capacity_tests_per_day": {
+        "min": 6427.0,
+        "max": 14105.0,
+        "mean": 10209.35,
+        "median": 10346.5,
+        "std": 2209.0654
+      },
+      "medicine_availability_percent": {
+        "min": 74.8,
+        "max": 98.4,
+        "mean": 87.5817,
+        "median": 87.9,
+        "std": 4.4705
+      },
+      "emergency_units": {
+        "min": 34.0,
+        "max": 53.0,
+        "mean": 43.4333,
+        "median": 43.5,
+        "std": 5.3023
+      },
+      "hospital_mortality_rate_percent": {
+        "min": 1.01,
+        "max": 2.26,
+        "mean": 1.7435,
+        "median": 1.745,
+        "std": 0.2546
+      },
+      "ambulances_available": {
+        "min": 44.0,
+        "max": 62.0,
+        "mean": 55.8833,
+        "median": 56.0,
+        "std": 4.2069
+      }
+    },
+    "categorical_stats": {
+      "region": {
+        "unique_count": 1,
+        "top_value": "Bhopal",
+        "values": {
+          "Bhopal": 60
+        }
+      },
+      "data_status": {
+        "unique_count": 1,
+        "top_value": "SOURCE_CALIBRATED_SYNTHETIC",
+        "values": {
+          "SOURCE_CALIBRATED_SYNTHETIC": 60
+        }
+      }
+    }
+  },
+  "demographics": {
+    "dataset": "demographics",
+    "rows": 1,
+    "columns": 23,
+    "column_names": [
+      "region",
+      "state",
+      "country",
+      "area_sq_km",
+      "population_2011",
+      "population_density_per_sq_km",
+      "urban_population_2011",
+      "rural_population_2011",
+      "male_population_2011",
+      "female_population_2011",
+      "sex_ratio_females_per_1000_males",
+      "literacy_rate_percent",
+      "age_0_6_percent",
+      "age_7_14_percent",
+      "age_15_24_percent",
+      "age_25_44_percent",
+      "age_45_59_percent",
+      "age_60_plus_percent",
+      "urbanization_percent",
+      "avg_household_size",
+      "housing_crowding_index",
+      "population_growth_index_annual",
+      "data_status"
+    ],
+    "total_missing_cells": 0,
+    "duplicate_rows": 0,
+    "date_range": null,
+    "unique_regions": 1,
+    "unique_diseases": 0,
+    "missing_by_column": {
+      "region": 0,
+      "state": 0,
+      "country": 0,
+      "area_sq_km": 0,
+      "population_2011": 0,
+      "population_density_per_sq_km": 0,
+      "urban_population_2011": 0,
+      "rural_population_2011": 0,
+      "male_population_2011": 0,
+      "female_population_2011": 0,
+      "sex_ratio_females_per_1000_males": 0,
+      "literacy_rate_percent": 0,
+      "age_0_6_percent": 0,
+      "age_7_14_percent": 0,
+      "age_15_24_percent": 0,
+      "age_25_44_percent": 0,
+      "age_45_59_percent": 0,
+      "age_60_plus_percent": 0,
+      "urbanization_percent": 0,
+      "avg_household_size": 0,
+      "housing_crowding_index": 0,
+      "population_growth_index_annual": 0,
+      "data_status": 0
+    },
+    "numerical_stats": {
+      "area_sq_km": {
+        "min": 2772.0,
+        "max": 2772.0,
+        "mean": 2772.0,
+        "median": 2772.0,
+        "std": NaN
+      },
+      "population_2011": {
+        "min": 2368145.0,
+        "max": 2368145.0,
+        "mean": 2368145.0,
+        "median": 2368145.0,
+        "std": NaN
+      },
+      "population_density_per_sq_km": {
+        "min": 855.0,
+        "max": 855.0,
+        "mean": 855.0,
+        "median": 855.0,
+        "std": NaN
+      },
+      "urban_population_2011": {
+        "min": 1917051.0,
+        "max": 1917051.0,
+        "mean": 1917051.0,
+        "median": 1917051.0,
+        "std": NaN
+      },
+      "rural_population_2011": {
+        "min": 454010.0,
+        "max": 454010.0,
+        "mean": 454010.0,
+        "median": 454010.0,
+        "std": NaN
+      },
+      "male_population_2011": {
+        "min": 1239378.0,
+        "max": 1239378.0,
+        "mean": 1239378.0,
+        "median": 1239378.0,
+        "std": NaN
+      },
+      "female_population_2011": {
+        "min": 1128767.0,
+        "max": 1128767.0,
+        "mean": 1128767.0,
+        "median": 1128767.0,
+        "std": NaN
+      },
+      "sex_ratio_females_per_1000_males": {
+        "min": 918.0,
+        "max": 918.0,
+        "mean": 918.0,
+        "median": 918.0,
+        "std": NaN
+      },
+      "literacy_rate_percent": {
+        "min": 80.37,
+        "max": 80.37,
+        "mean": 80.37,
+        "median": 80.37,
+        "std": NaN
+      },
+      "age_0_6_percent": {
+        "min": 12.2,
+        "max": 12.2,
+        "mean": 12.2,
+        "median": 12.2,
+        "std": NaN
+      },
+      "age_7_14_percent": {
+        "min": 15.4,
+        "max": 15.4,
+        "mean": 15.4,
+        "median": 15.4,
+        "std": NaN
+      },
+      "age_15_24_percent": {
+        "min": 20.3,
+        "max": 20.3,
+        "mean": 20.3,
+        "median": 20.3,
+        "std": NaN
+      },
+      "age_25_44_percent": {
+        "min": 30.1,
+        "max": 30.1,
+        "mean": 30.1,
+        "median": 30.1,
+        "std": NaN
+      },
+      "age_45_59_percent": {
+        "min": 13.0,
+        "max": 13.0,
+        "mean": 13.0,
+        "median": 13.0,
+        "std": NaN
+      },
+      "age_60_plus_percent": {
+        "min": 9.0,
+        "max": 9.0,
+        "mean": 9.0,
+        "median": 9.0,
+        "std": NaN
+      },
+      "urbanization_percent": {
+        "min": 80.85,
+        "max": 80.85,
+        "mean": 80.85,
+        "median": 80.85,
+        "std": NaN
+      },
+      "avg_household_size": {
+        "min": 4.4,
+        "max": 4.4,
+        "mean": 4.4,
+        "median": 4.4,
+        "std": NaN
+      },
+      "housing_crowding_index": {
+        "min": 0.56,
+        "max": 0.56,
+        "mean": 0.56,
+        "median": 0.56,
+        "std": NaN
+      },
+      "population_growth_index_annual": {
+        "min": 1.8,
+        "max": 1.8,
+        "mean": 1.8,
+        "median": 1.8,
+        "std": NaN
+      }
+    },
+    "categorical_stats": {
+      "region": {
+        "unique_count": 1,
+        "top_value": "Bhopal",
+        "values": {
+          "Bhopal": 1
+        }
+      },
+      "state": {
+        "unique_count": 1,
+        "top_value": "Madhya Pradesh",
+        "values": {
+          "Madhya Pradesh": 1
+        }
+      },
+      "country": {
+        "unique_count": 1,
+        "top_value": "India",
+        "values": {
+          "India": 1
+        }
+      },
+      "data_status": {
+        "unique_count": 1,
+        "top_value": "REAL_HISTORICAL",
+        "values": {
+          "REAL_HISTORICAL": 1
+        }
+      }
+    }
+  },
+  "master_features": {
+    "dataset": "master_features",
+    "rows": 9130,
+    "columns": 80,
+    "column_names": [
+      "date",
+      "region",
+      "disease",
+      "new_cases",
+      "active_cases",
+      "recovered",
+      "deaths",
+      "hospitalizations",
+      "icu_admissions",
+      "tests",
+      "test_positivity_rate_percent",
+      "data_status",
+      "cases_7d_avg",
+      "cases_14d_avg",
+      "cases_28d_avg",
+      "growth_rate_7d",
+      "growth_rate_14d",
+      "incidence_per_100k",
+      "case_fatality_rate",
+      "hospitalization_rate",
+      "icu_admission_rate",
+      "year",
+      "month",
+      "week",
+      "day_of_year",
+      "quarter",
+      "season",
+      "temperature_c",
+      "rainfall_mm",
+      "humidity_percent",
+      "water_accumulation_index",
+      "air_quality_index",
+      "wind_speed_kmh",
+      "solar_radiation_kwh_m2",
+      "surface_water_index",
+      "pollution_index",
+      "rainfall_lag_7",
+      "rainfall_lag_14",
+      "rainfall_lag_21",
+      "rainfall_7d",
+      "rainfall_14d",
+      "humidity_lag_7",
+      "humidity_lag_14",
+      "humidity_7d_avg",
+      "temperature_lag_7",
+      "temperature_7d_avg",
+      "state",
+      "country",
+      "area_sq_km",
+      "population_2011",
+      "population_density_per_sq_km",
+      "urban_population_2011",
+      "rural_population_2011",
+      "male_population_2011",
+      "female_population_2011",
+      "sex_ratio_females_per_1000_males",
+      "literacy_rate_percent",
+      "age_0_6_percent",
+      "age_7_14_percent",
+      "age_15_24_percent",
+      "age_25_44_percent",
+      "age_45_59_percent",
+      "age_60_plus_percent",
+      "urbanization_percent",
+      "avg_household_size",
+      "housing_crowding_index",
+      "population_growth_index_annual",
+      "hospital_count",
+      "hospital_beds",
+      "available_oxygen_percent",
+      "icu_beds",
+      "doctors",
+      "testing_capacity_tests_per_day",
+      "medicine_availability_percent",
+      "emergency_units",
+      "hospital_mortality_rate_percent",
+      "ambulances_available",
+      "beds_per_100k",
+      "icu_beds_per_100k",
+      "doctors_per_100k"
+    ],
+    "total_missing_cells": 119040,
+    "duplicate_rows": 0,
+    "date_range": {
+      "min_date": "2021-01-01",
+      "max_date": "2025-12-31"
+    },
+    "unique_regions": 1,
+    "unique_diseases": 5,
+    "missing_by_column": {
+      "date": 0,
+      "region": 0,
+      "disease": 0,
+      "new_cases": 0,
+      "active_cases": 0,
+      "recovered": 0,
+      "deaths": 0,
+      "hospitalizations": 0,
+      "icu_admissions": 0,
+      "tests": 0,
+      "test_positivity_rate_percent": 0,
+      "data_status": 0,
+      "cases_7d_avg": 0,
+      "cases_14d_avg": 0,
+      "cases_28d_avg": 0,
+      "growth_rate_7d": 0,
+      "growth_rate_14d": 0,
+      "incidence_per_100k": 0,
+      "case_fatality_rate": 0,
+      "hospitalization_rate": 0,
+      "icu_admission_rate": 0,
+      "year": 0,
+      "month": 0,
+      "week": 0,
+      "day_of_year": 0,
+      "quarter": 0,
+      "season": 0,
+      "temperature_c": 0,
+      "rainfall_mm": 0,
+      "humidity_percent": 0,
+      "water_accumulation_index": 0,
+      "air_quality_index": 0,
+      "wind_speed_kmh": 0,
+      "solar_radiation_kwh_m2": 0,
+      "surface_water_index": 0,
+      "pollution_index": 0,
+      "rainfall_lag_7": 35,
+      "rainfall_lag_14": 70,
+      "rainfall_lag_21": 105,
+      "rainfall_7d": 0,
+      "rainfall_14d": 0,
+      "humidity_lag_7": 35,
+      "humidity_lag_14": 70,
+      "humidity_7d_avg": 0,
+      "temperature_lag_7": 35,
+      "temperature_7d_avg": 0,
+      "state": 0,
+      "country": 0,
+      "area_sq_km": 0,
+      "population_2011": 0,
+      "population_density_per_sq_km": 0,
+      "urban_population_2011": 0,
+      "rural_population_2011": 0,
+      "male_population_2011": 0,
+      "female_population_2011": 0,
+      "sex_ratio_females_per_1000_males": 0,
+      "literacy_rate_percent": 0,
+      "age_0_6_percent": 0,
+      "age_7_14_percent": 0,
+      "age_15_24_percent": 0,
+      "age_25_44_percent": 0,
+      "age_45_59_percent": 0,
+      "age_60_plus_percent": 0,
+      "urbanization_percent": 0,
+      "avg_household_size": 0,
+      "housing_crowding_index": 0,
+      "population_growth_index_annual": 0,
+      "hospital_count": 9130,
+      "hospital_beds": 9130,
+      "available_oxygen_percent": 9130,
+      "icu_beds": 9130,
+      "doctors": 9130,
+      "testing_capacity_tests_per_day": 9130,
+      "medicine_availability_percent": 9130,
+      "emergency_units": 9130,
+      "hospital_mortality_rate_percent": 9130,
+      "ambulances_available": 9130,
+      "beds_per_100k": 9130,
+      "icu_beds_per_100k": 9130,
+      "doctors_per_100k": 9130
+    },
+    "numerical_stats": {
+      "new_cases": {
+        "min": 0.0,
+        "max": 81.0,
+        "mean": 17.1761,
+        "median": 16.0,
+        "std": 9.7755
+      },
+      "active_cases": {
+        "min": 3.0,
+        "max": 589.0,
+        "mean": 133.6786,
+        "median": 120.0,
+        "std": 69.7363
+      },
+      "recovered": {
+        "min": 2.0,
+        "max": 415.0,
+        "mean": 94.131,
+        "median": 84.0,
+        "std": 49.1718
+      },
+      "deaths": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 0.0699,
+        "median": 0.0,
+        "std": 0.2688
+      },
+      "hospitalizations": {
+        "min": 0.0,
+        "max": 10.0,
+        "mean": 1.0463,
+        "median": 1.0,
+        "std": 1.1634
+      },
+      "icu_admissions": {
+        "min": 0.0,
+        "max": 3.0,
+        "mean": 0.0821,
+        "median": 0.0,
+        "std": 0.2983
+      },
+      "tests": {
+        "min": 51.0,
+        "max": 1594.0,
+        "mean": 458.2613,
+        "median": 430.0,
+        "std": 193.5699
+      },
+      "test_positivity_rate_percent": {
+        "min": 0.0,
+        "max": 8.88,
+        "mean": 3.6603,
+        "median": 3.56,
+        "std": 1.335
+      },
+      "cases_7d_avg": {
+        "min": 2.7143,
+        "max": 59.0,
+        "mean": 17.1713,
+        "median": 16.5714,
+        "std": 9.0117
+      },
+      "cases_14d_avg": {
+        "min": 3.3571,
+        "max": 57.7857,
+        "mean": 17.1693,
+        "median": 16.7143,
+        "std": 8.9392
+      },
+      "cases_28d_avg": {
+        "min": 3.75,
+        "max": 54.4643,
+        "mean": 17.164,
+        "median": 16.6607,
+        "std": 8.8715
+      },
+      "growth_rate_7d": {
+        "min": -100.0,
+        "max": 1000.0,
+        "mean": 10.0406,
+        "median": 0.0,
+        "std": 56.4697
+      },
+      "growth_rate_14d": {
+        "min": -100.0,
+        "max": 1200.0,
+        "mean": 10.3113,
+        "median": 0.0,
+        "std": 58.7954
+      },
+      "incidence_per_100k": {
+        "min": 0.0,
+        "max": 3.4204,
+        "mean": 0.7253,
+        "median": 0.6756,
+        "std": 0.4128
+      },
+      "case_fatality_rate": {
+        "min": 0.0,
+        "max": 50.0,
+        "mean": 0.4186,
+        "median": 0.0,
+        "std": 2.0087
+      },
+      "hospitalization_rate": {
+        "min": 0.0,
+        "max": 100.0,
+        "mean": 6.3413,
+        "median": 4.7619,
+        "std": 7.5155
+      },
+      "icu_admission_rate": {
+        "min": 0.0,
+        "max": 100.0,
+        "mean": 4.4152,
+        "median": 0.0,
+        "std": 17.4455
+      },
+      "year": {
+        "min": 2021.0,
+        "max": 2025.0,
+        "mean": 2023.0005,
+        "median": 2023.0,
+        "std": 1.4141
+      },
+      "month": {
+        "min": 1.0,
+        "max": 12.0,
+        "mean": 6.5235,
+        "median": 7.0,
+        "std": 3.4487
+      },
+      "week": {
+        "min": 1.0,
+        "max": 53.0,
+        "mean": 26.5016,
+        "median": 26.5,
+        "std": 15.0584
+      },
+      "day_of_year": {
+        "min": 1.0,
+        "max": 366.0,
+        "mean": 183.1002,
+        "median": 183.0,
+        "std": 105.4299
+      },
+      "quarter": {
+        "min": 1.0,
+        "max": 4.0,
+        "mean": 2.5088,
+        "median": 3.0,
+        "std": 1.1171
+      },
+      "temperature_c": {
+        "min": 14.75,
+        "max": 39.05,
+        "mean": 26.3131,
+        "median": 26.26,
+        "std": 4.6912
+      },
+      "rainfall_mm": {
+        "min": 0.0,
+        "max": 39.21,
+        "mean": 5.6122,
+        "median": 0.0,
+        "std": 10.6822
+      },
+      "humidity_percent": {
+        "min": 30.35,
+        "max": 93.76,
+        "mean": 61.7239,
+        "median": 59.115,
+        "std": 11.7281
+      },
+      "water_accumulation_index": {
+        "min": 0.705,
+        "max": 2.695,
+        "mean": 1.4026,
+        "median": 1.2655,
+        "std": 0.423
+      },
+      "air_quality_index": {
+        "min": 42.5,
+        "max": 224.1,
+        "mean": 123.4794,
+        "median": 118.4,
+        "std": 30.6914
+      },
+      "wind_speed_kmh": {
+        "min": 0.5,
+        "max": 15.05,
+        "mean": 6.9605,
+        "median": 6.94,
+        "std": 2.2352
+      },
+      "solar_radiation_kwh_m2": {
+        "min": 3.35,
+        "max": 7.93,
+        "mean": 5.617,
+        "median": 5.68,
+        "std": 0.8483
+      },
+      "surface_water_index": {
+        "min": 0.05,
+        "max": 1.5,
+        "mean": 0.658,
+        "median": 0.5575,
+        "std": 0.336
+      },
+      "pollution_index": {
+        "min": 10.0,
+        "max": 140.13,
+        "mean": 68.522,
+        "median": 66.81,
+        "std": 19.1925
+      },
+      "rainfall_lag_7": {
+        "min": 0.0,
+        "max": 39.21,
+        "mean": 5.6277,
+        "median": 0.0,
+        "std": 10.6981
+      },
+      "rainfall_lag_14": {
+        "min": 0.0,
+        "max": 39.21,
+        "mean": 5.6435,
+        "median": 0.0,
+        "std": 10.7146
+      },
+      "rainfall_lag_21": {
+        "min": 0.0,
+        "max": 39.21,
+        "mean": 5.6654,
+        "median": 0.0,
+        "std": 10.7295
+      },
+      "rainfall_7d": {
+        "min": 0.0,
+        "max": 224.81,
+        "mean": 39.28,
+        "median": 13.66,
+        "std": 51.7665
+      },
+      "rainfall_14d": {
+        "min": 0.0,
+        "max": 427.26,
+        "mean": 78.5108,
+        "median": 26.56,
+        "std": 98.3225
+      },
+      "humidity_lag_7": {
+        "min": 30.35,
+        "max": 93.76,
+        "mean": 61.7481,
+        "median": 59.13,
+        "std": 11.7412
+      },
+      "humidity_lag_14": {
+        "min": 30.35,
+        "max": 93.76,
+        "mean": 61.7567,
+        "median": 59.125,
+        "std": 11.7616
+      },
+      "humidity_7d_avg": {
+        "min": 46.2729,
+        "max": 85.3971,
+        "mean": 61.7213,
+        "median": 57.6957,
+        "std": 10.7758
+      },
+      "temperature_lag_7": {
+        "min": 14.75,
+        "max": 39.05,
+        "mean": 26.3423,
+        "median": 26.28,
+        "std": 4.6763
+      },
+      "temperature_7d_avg": {
+        "min": 17.5314,
+        "max": 35.6214,
+        "mean": 26.316,
+        "median": 26.2279,
+        "std": 4.4168
+      },
+      "area_sq_km": {
+        "min": 2772.0,
+        "max": 2772.0,
+        "mean": 2772.0,
+        "median": 2772.0,
+        "std": 0.0
+      },
+      "population_2011": {
+        "min": 2368145.0,
+        "max": 2368145.0,
+        "mean": 2368145.0,
+        "median": 2368145.0,
+        "std": 0.0
+      },
+      "population_density_per_sq_km": {
+        "min": 855.0,
+        "max": 855.0,
+        "mean": 855.0,
+        "median": 855.0,
+        "std": 0.0
+      },
+      "urban_population_2011": {
+        "min": 1917051.0,
+        "max": 1917051.0,
+        "mean": 1917051.0,
+        "median": 1917051.0,
+        "std": 0.0
+      },
+      "rural_population_2011": {
+        "min": 454010.0,
+        "max": 454010.0,
+        "mean": 454010.0,
+        "median": 454010.0,
+        "std": 0.0
+      },
+      "male_population_2011": {
+        "min": 1239378.0,
+        "max": 1239378.0,
+        "mean": 1239378.0,
+        "median": 1239378.0,
+        "std": 0.0
+      },
+      "female_population_2011": {
+        "min": 1128767.0,
+        "max": 1128767.0,
+        "mean": 1128767.0,
+        "median": 1128767.0,
+        "std": 0.0
+      },
+      "sex_ratio_females_per_1000_males": {
+        "min": 918.0,
+        "max": 918.0,
+        "mean": 918.0,
+        "median": 918.0,
+        "std": 0.0
+      },
+      "literacy_rate_percent": {
+        "min": 80.37,
+        "max": 80.37,
+        "mean": 80.37,
+        "median": 80.37,
+        "std": 0.0
+      },
+      "age_0_6_percent": {
+        "min": 12.2,
+        "max": 12.2,
+        "mean": 12.2,
+        "median": 12.2,
+        "std": 0.0
+      },
+      "age_7_14_percent": {
+        "min": 15.4,
+        "max": 15.4,
+        "mean": 15.4,
+        "median": 15.4,
+        "std": 0.0
+      },
+      "age_15_24_percent": {
+        "min": 20.3,
+        "max": 20.3,
+        "mean": 20.3,
+        "median": 20.3,
+        "std": 0.0
+      },
+      "age_25_44_percent": {
+        "min": 30.1,
+        "max": 30.1,
+        "mean": 30.1,
+        "median": 30.1,
+        "std": 0.0
+      },
+      "age_45_59_percent": {
+        "min": 13.0,
+        "max": 13.0,
+        "mean": 13.0,
+        "median": 13.0,
+        "std": 0.0
+      },
+      "age_60_plus_percent": {
+        "min": 9.0,
+        "max": 9.0,
+        "mean": 9.0,
+        "median": 9.0,
+        "std": 0.0
+      },
+      "urbanization_percent": {
+        "min": 80.85,
+        "max": 80.85,
+        "mean": 80.85,
+        "median": 80.85,
+        "std": 0.0
+      },
+      "avg_household_size": {
+        "min": 4.4,
+        "max": 4.4,
+        "mean": 4.4,
+        "median": 4.4,
+        "std": 0.0
+      },
+      "housing_crowding_index": {
+        "min": 0.56,
+        "max": 0.56,
+        "mean": 0.56,
+        "median": 0.56,
+        "std": 0.0
+      },
+      "population_growth_index_annual": {
+        "min": 1.8,
+        "max": 1.8,
+        "mean": 1.8,
+        "median": 1.8,
+        "std": 0.0
+      }
+    },
+    "categorical_stats": {
+      "region": {
+        "unique_count": 1,
+        "top_value": "Bhopal",
+        "values": {
+          "Bhopal": 9130
+        }
+      },
+      "disease": {
+        "unique_count": 5,
+        "top_value": "COVID-19",
+        "values": {
+          "COVID-19": 1826,
+          "Dengue": 1826,
+          "Influenza": 1826,
+          "Malaria": 1826,
+          "Typhoid": 1826
+        }
+      },
+      "data_status": {
+        "unique_count": 1,
+        "top_value": "SOURCE_CALIBRATED_SYNTHETIC",
+        "values": {
+          "SOURCE_CALIBRATED_SYNTHETIC": 9130
+        }
+      },
+      "season": {
+        "unique_count": 4,
+        "top_value": "Monsoon",
+        "values": {
+          "Monsoon": 3050,
+          "Summer": 2300,
+          "Winter": 2255,
+          "Post-monsoon": 1525
+        }
+      },
+      "state": {
+        "unique_count": 1,
+        "top_value": "Madhya Pradesh",
+        "values": {
+          "Madhya Pradesh": 9130
+        }
+      },
+      "country": {
+        "unique_count": 1,
+        "top_value": "India",
+        "values": {
+          "India": 9130
+        }
+      }
+    }
+  }
+}

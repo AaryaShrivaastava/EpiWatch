@@ -1,0 +1,2 @@
+total_samples,train_samples,test_samples,cutoff_date,n_features,target_column,train_positive_rate,test_positive_rate,split_method,label_source
+9130,7304,1826,2024-12-31,25,potential_anomaly,0.0301,0.0301,chronological,Phase2_statistical_rolling_threshold

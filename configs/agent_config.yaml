@@ -1,0 +1,14 @@
+agent:
+  provider: "mock" # options: "mock", "gemini", "groq"
+  model: "mock-llm-1"
+  api_key: ""
+  temperature: 0.1
+  max_tool_calls: 5
+  timeout_seconds: 30
+  
+  data:
+    risk_assessment_path: "data/risk_engine/regional_risk_assessments.csv"
+    outbreak_path: "data/analytics/outbreak_detection_results.csv"
+    forecast_path: "data/forecasts/disease_forecasts.csv"
+    recommendations_path: "data/recommendations/recommendations.csv"
+    env_path: "data/environmental_risk/environmental_risk_scores.csv"

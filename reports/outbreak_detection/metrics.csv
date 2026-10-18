@@ -1,0 +1,4 @@
+model,precision,recall,f1,roc_auc,pr_auc,false_positive_rate,true_positives,false_positives,false_negatives,true_negatives
+Statistical Baseline (Level 1),0.75,1.0,0.8571,0.9996,0.9868,0.0102,54,18,0,1753
+Supervised Classifier (Level 3),0.625,0.1852,0.2857,0.9668,0.4966,0.0034,10,6,44,1765
+Isolation Forest (Level 2),0.0714,0.0556,0.0625,0.7284,0.0757,0.022,3,39,51,1732

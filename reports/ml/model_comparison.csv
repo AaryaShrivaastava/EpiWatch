@@ -1,0 +1,4 @@
+model,roc_auc_test,avg_precision_test,precision,recall,f1_score,cv_roc_auc_mean,cv_roc_auc_std,training_time_s,n_train_samples,n_test_samples,smote_applied
+gradient_boosting,0.4964,0.0365,0.0,0.0,0.0,0.9882,0.02,44.33,14168,1826,True
+logistic_regression,0.4811,0.0282,0.0282,0.4,0.0526,0.348,0.1384,7.04,14168,1826,True
+random_forest,0.4787,0.0401,0.2,0.0182,0.0333,0.9717,0.0276,9.4,14168,1826,True

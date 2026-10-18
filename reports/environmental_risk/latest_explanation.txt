@@ -1,0 +1,14 @@
+Region: Bhopal
+Disease: Dengue
+
+Environmental Risk Indicator: 36/100
+
+Contributing signals:
+- Rainfall is considered in the anomaly score (14d sum: 21.8).
+- Humidity is considered in the anomaly score (14d mean: 57.5%).
+- Temperature is considered in the anomaly score (14d mean: 18.8°C).
+
+Limitations:
+- These associations do not establish causation.
+- The underlying dataset may include synthetic observations.
+- The score is not a clinically validated risk estimate.

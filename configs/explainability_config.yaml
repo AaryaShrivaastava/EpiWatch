@@ -1,0 +1,19 @@
+explainability:
+  # Models to explain
+  models:
+    outbreak_rf:
+      model_path: "models/random_forest.pkl"
+      scaler_path: "models/feature_scaler.pkl"
+      features_path: "models/feature_columns.json"
+      target_type: "classification"
+      explainer_type: "tree"
+      
+  explanation_settings:
+    max_global_samples: 500
+    background_samples: 100
+    random_seed: 42
+    
+  outputs:
+    global_dir: "reports/explainability/global"
+    local_dir: "data/explainability"
+    plots_dir: "reports/explainability/plots"

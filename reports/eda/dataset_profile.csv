@@ -1,0 +1,6 @@
+dataset,rows,columns,missing_cells,duplicates,min_date,max_date,unique_regions,unique_diseases
+epidemiological,9130,12,0,0,2021-01-01,2025-12-31,1,5
+environmental,1826,12,0,0,2021-01-01,2025-12-31,1,0
+healthcare,60,13,0,0,2021-01-01,2025-12-01,1,0
+demographics,1,23,0,0,,,1,0
+master_features,9130,80,119040,0,2021-01-01,2025-12-31,1,5

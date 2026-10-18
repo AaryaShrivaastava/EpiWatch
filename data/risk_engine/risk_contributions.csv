@@ -1,0 +1,6 @@
+region,dimension,raw_value,normalized_score,status,configured_weight,numerical_contribution
+Bhopal,disease_burden,0.2533628641827253,0.5067257283654506,available,25,0.18097347441623235
+Bhopal,outbreak_signal,,,missing_indicators,25,0.0
+Bhopal,forecast_trajectory,16.57,100.0,available,20,28.571428571428573
+Bhopal,environmental_risk,35.6063607059976,35.6063607059976,available,10,5.086622957999657
+Bhopal,healthcare_stress,3.39954974747978,3.39954974747978,available,15,0.7284749458885242

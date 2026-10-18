@@ -1,0 +1,14 @@
+Model: random_forest
+============================================================
+                       precision    recall  f1-score   support
+
+       No Anomaly (0)       0.97      1.00      0.98      1771
+Potential Anomaly (1)       0.20      0.02      0.03        55
+
+             accuracy                           0.97      1826
+            macro avg       0.59      0.51      0.51      1826
+         weighted avg       0.95      0.97      0.96      1826
+
+ROC-AUC (test): 0.4787
+Average Precision: 0.0401
+CV ROC-AUC: 0.9717 ± 0.0276

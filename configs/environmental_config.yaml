@@ -1,0 +1,62 @@
+environmental_risk:
+  disease: "Dengue"
+  region: "Bhopal"
+  
+  data:
+    environmental_path: "data/processed/environmental_clean.csv"
+    epidemiological_path: "data/processed/epidemiological_clean.csv"
+    
+  alignment:
+    frequency: "D" # Daily alignment
+    
+  features:
+    rolling_windows: [7, 14, 28]
+    lags: [0, 7, 14, 21, 28]
+    variables:
+      temperature_c: ["mean", "lag"]
+      rainfall_mm: ["sum", "lag"]
+      humidity_percent: ["mean", "lag"]
+      air_quality_index: ["mean", "lag"]
+      water_accumulation_index: ["mean", "lag"]
+      
+  modeling:
+    target: "new_cases"
+    split_date: "2024-01-01" # Train before, Test after
+    statistical:
+      family: "NegativeBinomial"
+      predictors:
+        - rainfall_mm_lag_14
+        - temperature_c_lag_14
+        - humidity_percent_lag_14
+    machine_learning:
+      model: "RandomForestRegressor"
+      n_estimators: 100
+      max_depth: 10
+      predictors:
+        - rainfall_mm_lag_7
+        - rainfall_mm_lag_14
+        - rainfall_mm_lag_21
+        - rainfall_mm_7d_sum
+        - temperature_c_lag_7
+        - temperature_c_lag_14
+        - temperature_c_7d_mean
+        - humidity_percent_lag_7
+        - humidity_percent_lag_14
+        - humidity_percent_7d_mean
+        - air_quality_index_lag_7
+        
+  scoring:
+    weights:
+      rainfall_anomaly: 40
+      humidity_anomaly: 30
+      temperature_anomaly: 30
+    thresholds:
+      moderate: 40
+      high: 60
+      very_high: 80
+      
+  outputs:
+    data_dir: "data/environmental_risk"
+    reports_dir: "reports/environmental_risk"
+    metrics_dir: "reports/environmental_risk/metrics"
+    plots_dir: "reports/environmental_risk/plots"

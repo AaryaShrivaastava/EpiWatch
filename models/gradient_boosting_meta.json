@@ -1,0 +1,17 @@
+{
+  "model_name": "gradient_boosting",
+  "cv_roc_auc_mean": 0.9882,
+  "cv_roc_auc_std": 0.02,
+  "cv_roc_auc_scores": [
+    0.9485,
+    0.9997,
+    0.9994,
+    0.9995,
+    0.9941
+  ],
+  "train_samples": 14168,
+  "n_features": 25,
+  "training_time_seconds": 44.33,
+  "smote_applied": true,
+  "label_source": "Phase2_statistical_rolling_threshold"
+}

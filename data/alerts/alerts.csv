@@ -1,0 +1,8 @@
+alert_id,region,category,severity,status,explanation,triggering_metric,observed_value,timestamp
+ALT-0001,Bhopal,Routine Surveillance,Info,acknowledged,Normal transmission parameters observed for Bhopal.,baseline_stability,Normal,2026-10-15 09:43
+ALT-0002,Indore,Routine Surveillance,Info,acknowledged,Normal transmission parameters observed for Indore.,baseline_stability,Normal,2026-10-15 09:43
+ALT-0003,Jabalpur,Routine Surveillance,Info,acknowledged,Normal transmission parameters observed for Jabalpur.,baseline_stability,Normal,2026-10-15 09:43
+ALT-0004,Gwalior,Routine Surveillance,Info,acknowledged,Normal transmission parameters observed for Gwalior.,baseline_stability,Normal,2026-10-15 09:43
+ALT-0005,Ujjain,Routine Surveillance,Info,acknowledged,Normal transmission parameters observed for Ujjain.,baseline_stability,Normal,2026-10-15 09:43
+ALT-20261017-BHO-01,Bhopal,Surveillance Anomaly (Influenza),Moderate,active,"Bhopal shows concerning Influenza acceleration: current daily cases (58) exceed 28-day historical baseline (mean=41.0, std=11.3) with Z-score 1.51σ and 7-day growth rate 17.3%. Incident rate: 2.45 per 100k.",growth_rate_7d,0.173,2026-10-17T14:04:03.761835
+ALT-20261017-IND-02,Indore,Surveillance Anomaly (Influenza),High,active,"Indore shows concerning Influenza acceleration: current daily cases (91) exceed 28-day historical baseline (mean=57.7, std=13.5) with Z-score 2.47σ and 7-day growth rate 16.9%. Incident rate: 2.78 per 100k.",rolling_z_score,2.467,2026-10-17T14:04:03.761835

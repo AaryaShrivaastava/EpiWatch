@@ -1,0 +1,7 @@
+recommendation_id,region,target_stakeholder,priority,recommendation_title,rationale,evidence_summary,generation_date,action_steps,evidence_level,generated_at
+REC-0001,Bhopal,Health Authorities,LOW,Maintain Routine Surveillance in Bhopal,Baseline transmission within acceptable variance.,Risk Score: 20.2 (Low),2026-10-15,,,
+REC-0002,Indore,Health Authorities,LOW,Maintain Routine Surveillance in Indore,Baseline transmission within acceptable variance.,Risk Score: 19.8 (Low),2026-10-15,,,
+REC-0003,Jabalpur,Health Authorities,LOW,Maintain Routine Surveillance in Jabalpur,Baseline transmission within acceptable variance.,Risk Score: 19.9 (Low),2026-10-15,,,
+REC-0004,Gwalior,Health Authorities,LOW,Maintain Routine Surveillance in Gwalior,Baseline transmission within acceptable variance.,Risk Score: 19.9 (Low),2026-10-15,,,
+REC-0005,Ujjain,Health Authorities,LOW,Maintain Routine Surveillance in Ujjain,Baseline transmission within acceptable variance.,Risk Score: 18.8 (Low),2026-10-15,,,
+REC-IND-10171404,Indore,Public-health authorities,High priority,Surveillance Directive: Influenza Alert in Indore,"Indore shows concerning Influenza acceleration: current daily cases (91) exceed 28-day historical baseline (mean=57.7, std=13.5) with Z-score 2.47σ and 7-day growth rate 16.9%. Incident rate: 2.78 per 100k.",,,Invoke 14-day trajectory forecast and check ICU bed utilization.,Level 1 Surveillance Signal,2026-10-17T14:04:03.958327

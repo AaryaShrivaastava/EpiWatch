@@ -1,0 +1,6 @@
+region,feature,value
+Bhopal,outbreak_anomaly_score,0.0
+Bhopal,forecast_growth_rate,16.57
+Bhopal,environmental_risk_score,35.6063607059976
+Bhopal,healthcare_stress_score,3.39954974747978
+Bhopal,healthcare_preparedness_score,95.86041038684522

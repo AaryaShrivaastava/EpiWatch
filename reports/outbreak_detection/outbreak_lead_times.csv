@@ -1,0 +1,2 @@
+episode_id,region,disease,start_date,end_date,duration_days,peak_date,peak_cases,peak_growth_rate,peak_incidence,max_anomaly_score,max_outbreak_probability,lead_time_days
+EP_BHOPAL_DENGUE_001,Bhopal,Dengue,2023-01-21,2023-01-26,6,2023-01-23,210,8.21,21.0,60.0,0.8,2

@@ -1,0 +1,38 @@
+recommendations:
+  region: "Bhopal"
+  
+  data:
+    risk_assessment_path: "data/risk_engine/regional_risk_assessments.csv"
+    outbreak_path: "data/analytics/outbreak_detection_results.csv"
+    forecast_path: "data/forecasts/disease_forecasts.csv"
+    env_path: "data/environmental_risk/environmental_risk_scores.csv"
+    hc_stress_path: "data/healthcare/analytics/healthcare_stress.csv"
+    hc_prep_path: "data/healthcare/analytics/healthcare_preparedness.csv"
+    resource_gap_path: "data/healthcare/analytics/resource_gap_analysis.csv"
+
+  rules:
+    outbreak_monitoring:
+      enabled: true
+      thresholds:
+        anomaly_score_min: 2.0
+    disease_trend:
+      enabled: true
+      thresholds:
+        forecast_growth_min: 0.2
+    environmental_risk:
+      enabled: true
+      thresholds:
+        risk_score_min: 60.0
+    healthcare_capacity:
+      enabled: true
+      thresholds:
+        stress_score_min: 50.0
+    healthcare_preparedness:
+      enabled: true
+      thresholds:
+        prep_score_max: 50.0
+        
+  outputs:
+    data_dir: "data/recommendations"
+    reports_dir: "reports/recommendations"
+    plots_dir: "reports/recommendations/plots"

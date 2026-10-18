@@ -1,0 +1,40 @@
+alerts:
+  region: "Bhopal"
+  data:
+    risk_assessment_path: "data/risk_engine/regional_risk_assessments.csv"
+    outbreak_path: "data/analytics/outbreak_detection_results.csv"
+    forecast_path: "data/forecasts/disease_forecasts.csv"
+    env_path: "data/environmental_risk/environmental_risk_scores.csv"
+    hc_stress_path: "data/healthcare/analytics/healthcare_stress.csv"
+    hc_prep_path: "data/healthcare/analytics/healthcare_preparedness.csv"
+    resource_gap_path: "data/healthcare/analytics/resource_gap_analysis.csv"
+
+  rules:
+    outbreak_signal:
+      category: "Outbreak-signal alerts"
+      threshold: 2.0
+      severity: "High"
+      cooldown_hours: 24
+      enabled: true
+    disease_growth:
+      category: "Forecast alerts"
+      threshold: 0.15
+      severity: "Moderate"
+      cooldown_hours: 24
+      enabled: true
+    regional_risk:
+      category: "Integrated regional risk alerts"
+      threshold: 75.0
+      severity: "High"
+      cooldown_hours: 48
+      enabled: true
+    hc_stress:
+      category: "Healthcare capacity alerts"
+      threshold: 60.0
+      severity: "Critical review required"
+      cooldown_hours: 12
+      enabled: true
+
+  outputs:
+    data_dir: "data/alerts"
+    reports_dir: "reports/alerts"

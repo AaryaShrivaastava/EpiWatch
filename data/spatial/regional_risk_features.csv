@@ -1,0 +1,6 @@
+region,cluster_id,cluster_label,is_hotspot,population_density,urbanization_percent,recent_30d_avg_incidence,recent_30d_avg_cfr,beds_per_100k,healthcare_stress,preparedness_score
+Bhopal,1,Urban Core — Moderate Risk,False,855,80.85,0.58,0.78,269.2,1.12,86.9
+Indore,1,Urban Core — Moderate Risk,False,841,74.09,0.59,0.69,266.6,1.07,86.5
+Jabalpur,2,Semi-Urban / Rural — High Resilience,False,473,58.46,0.6,0.29,285.8,0.98,88.4
+Gwalior,1,Urban Core — Moderate Risk,False,446,62.69,0.59,0.59,295.1,1.09,87.8
+Ujjain,2,Semi-Urban / Rural — High Resilience,False,326,39.19,0.58,0.65,275.2,0.64,88.7

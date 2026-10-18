@@ -1,0 +1,16 @@
+region,disease,model,horizon,test_MAE,test_RMSE,test_SMAPE
+Bhopal,COVID-19,MovingAverage_7,7,6.6939,9.4739,21.6287
+Bhopal,COVID-19,XGBoost,14,5.8588,8.1236,18.1806
+Bhopal,COVID-19,MovingAverage_7,28,7.1173,8.6352,23.6081
+Bhopal,Dengue,MovingAverage_14,7,4.6327,5.5824,24.861
+Bhopal,Dengue,Naive,14,4.4286,5.1409,23.5369
+Bhopal,Dengue,XGBoost,28,4.3083,5.4406,21.1947
+Bhopal,Influenza,GRU,7,6.4573,7.8089,20.4758
+Bhopal,Influenza,Naive,14,5.4286,7.6158,18.237
+Bhopal,Influenza,LSTM,28,4.4849,5.4736,14.4728
+Bhopal,Malaria,LSTM,7,5.3691,5.6016,45.5499
+Bhopal,Malaria,LSTM,14,3.4025,4.2226,30.2719
+Bhopal,Malaria,XGBoost,28,3.3972,3.8696,28.3447
+Bhopal,Typhoid,XGBoost,7,2.4379,3.1569,30.2876
+Bhopal,Typhoid,GRU,14,2.5858,3.2088,32.8142
+Bhopal,Typhoid,GRU,28,2.4493,3.1802,30.4988

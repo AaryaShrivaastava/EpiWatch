@@ -1,0 +1,50 @@
+# EpiWatch Phase 5 — Epidemiological Modeling Configuration
+
+epidemiology:
+  disease: "COVID-19" # Default, change if needed
+  region: "Bhopal"
+  model_type: "SIRD" # SIR or SIRD
+  
+  population:
+    assumption: "District Population 2011 Census"
+    reference_year: 2011
+    value: 2371061 # Bhopal 2011 census population
+  
+  initial_compartments:
+    infectious: 10
+    recovered: 0
+    deaths: 0 # Only used for SIRD
+
+  parameters:
+    beta: 0.3    # Transmission rate
+    gamma: 0.1   # Recovery rate
+    mu: 0.01     # Mortality rate (SIRD only)
+  
+  simulation:
+    duration_days: 100
+    time_step: 1.0 # 1 day
+  
+  fitting:
+    target: "new_cases" # which field to fit
+    period_start: "2021-01-01"
+    period_end: "2021-06-30"
+    bounds:
+      beta: [0.01, 1.0]
+      gamma: [0.01, 0.5]
+      mu: [0.0, 0.1]
+  
+  scenarios:
+    baseline:
+      beta: 0.3
+      gamma: 0.1
+    lower_transmission:
+      beta: 0.2
+      gamma: 0.1
+    faster_recovery:
+      beta: 0.3
+      gamma: 0.15
+
+  outputs:
+    data_dir: "data/epidemiology"
+    reports_dir: "reports/epidemiology"
+    plots_dir: "reports/epidemiology/plots"

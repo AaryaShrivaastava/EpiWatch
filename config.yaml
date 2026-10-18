@@ -1,0 +1,253 @@
+# EpiWatch Pipeline Configuration — Phase 1 + Phase 2 + Phase 3
+
+project:
+  name: EpiWatch
+  version: 0.3.0
+  default_region: Bhopal
+
+paths:
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
+  features_dir: data/features
+  reference_data_dir: data/reference
+  reports_dir: reports/data_quality
+  eda_dir: reports/eda
+  figures_dir: reports/figures
+  analytics_data_dir: data/analytics
+  models_dir: models
+  ml_reports_dir: reports/ml
+
+raw_files:
+  epidemiological: Dataset/05_epidemiological_daily_bhopal.csv
+  environmental: Dataset/02_environmental_daily_bhopal.csv
+  healthcare: Dataset/03_healthcare_monthly_bhopal.csv
+  demographics: Dataset/01_demographics_bhopal.csv
+  interventions: Dataset/04_interventions_daily_bhopal.csv
+
+logging:
+  level: INFO
+  log_file: epiwatch_pipeline.log
+
+trend_thresholds:
+  rapid_increase: 30.0
+  increase: 10.0
+  stable_low: -10.0
+  stable_high: 10.0
+  decrease: -10.0
+  rapid_decrease: -30.0
+
+anomaly_detection:
+  rolling_window_days: 28
+  std_multiplier: 2.0
+
+schemas:
+  epidemiological:
+    required_columns:
+      - date
+      - region
+      - disease
+      - new_cases
+      - active_cases
+      - recovered
+      - deaths
+      - hospitalizations
+      - icu_admissions
+      - tests
+    numeric_columns:
+      - new_cases
+      - active_cases
+      - recovered
+      - deaths
+      - hospitalizations
+      - icu_admissions
+      - tests
+    non_negative_columns:
+      - new_cases
+      - active_cases
+      - recovered
+      - deaths
+      - hospitalizations
+      - icu_admissions
+      - tests
+    key_columns:
+      - date
+      - region
+      - disease
+
+  environmental:
+    required_columns:
+      - date
+      - region
+      - temperature_c
+      - rainfall_mm
+      - humidity_percent
+      - wind_speed_kmh
+      - air_quality_index
+    numeric_columns:
+      - temperature_c
+      - rainfall_mm
+      - humidity_percent
+      - wind_speed_kmh
+      - air_quality_index
+      - water_accumulation_index
+      - solar_radiation_kwh_m2
+      - surface_water_index
+      - pollution_index
+    range_checks:
+      humidity_percent: [0.0, 100.0]
+      air_quality_index: [0.0, 1000.0]
+    key_columns:
+      - date
+      - region
+
+  healthcare:
+    required_columns:
+      - month
+      - region
+      - hospital_beds
+      - icu_beds
+      - doctors
+      - testing_capacity_tests_per_day
+      - available_oxygen_percent
+      - medicine_availability_percent
+      - emergency_units
+    numeric_columns:
+      - hospital_beds
+      - icu_beds
+      - doctors
+      - testing_capacity_tests_per_day
+      - available_oxygen_percent
+      - medicine_availability_percent
+      - emergency_units
+    range_checks:
+      available_oxygen_percent: [0.0, 100.0]
+      medicine_availability_percent: [0.0, 100.0]
+    key_columns:
+      - month
+      - region
+
+  demographics:
+    required_columns:
+      - region
+      - population_2011
+      - population_density_per_sq_km
+      - urbanization_percent
+    numeric_columns:
+      - population_2011
+      - population_density_per_sq_km
+      - urbanization_percent
+      - area_sq_km
+    key_columns:
+      - region
+
+feature_settings:
+  rolling_windows: [7, 14, 28]
+  lag_days: [7, 14, 21]
+  incidence_scale: 100000
+
+# ============================================================
+# Phase 3 — ML Outbreak Detection Settings
+# ============================================================
+ml_settings:
+  # Supervised label: uses statistical anomaly flag from Phase 2
+  target_column: potential_anomaly
+
+  # Features for outbreak detection classification
+  feature_columns:
+    # Epidemiological core
+    - new_cases
+    - active_cases
+    - deaths
+    - hospitalizations
+    - icu_admissions
+    - tests
+    - test_positivity_rate_percent
+    # Engineered epidemiological features
+    - cases_7d_avg
+    - cases_14d_avg
+    - cases_28d_avg
+    - growth_rate_7d
+    - growth_rate_14d
+    - incidence_per_100k
+    - case_fatality_rate
+    - hospitalization_rate
+    # Environmental features (lagged)
+    - temperature_c
+    - humidity_percent
+    - rainfall_mm
+    - air_quality_index
+    - rainfall_lag_7
+    - humidity_lag_7
+    - rainfall_7d
+    # Temporal features
+    - month
+    - week
+    - quarter
+
+  # Train/test split
+  test_size: 0.2
+  random_state: 42
+
+  # Cross-validation
+  cv_folds: 5
+
+  # Class imbalance handling
+  use_smote: true
+
+  # Models to train
+  models:
+    logistic_regression:
+      enabled: true
+      C: 1.0
+      max_iter: 1000
+    random_forest:
+      enabled: true
+      n_estimators: 100
+      max_depth: 10
+      min_samples_leaf: 5
+    gradient_boosting:
+      enabled: true
+      n_estimators: 100
+      learning_rate: 0.1
+      max_depth: 5
+
+# ============================================================
+# Phase 3 — Early Outbreak Detection Specific Settings
+# ============================================================
+outbreak_detection:
+  reports_dir: reports/outbreak_detection
+  models_dir: models/outbreak
+  figures_dir: reports/figures/outbreak_detection
+
+  baseline:
+    rolling_window_days: 28
+    upper_std_multiplier: 2.0
+    critical_std_multiplier: 3.0
+
+  isolation_forest:
+    contamination: 0.05
+    n_estimators: 100
+    random_state: 42
+
+  classifier:
+    n_estimators: 100
+    max_depth: 10
+    class_weight: balanced
+    random_state: 42
+
+  signal_weights:
+    statistical_anomaly: 0.25
+    isolation_anomaly: 0.20
+    classifier_probability: 0.35
+    growth_signal: 0.10
+    incidence_signal: 0.10
+
+  status_thresholds:
+    normal_max: 24
+    watch_max: 49
+    elevated_max: 74
+    high_alert_max: 100
+
+  episode_grouping:
+    max_gap_days: 7
+

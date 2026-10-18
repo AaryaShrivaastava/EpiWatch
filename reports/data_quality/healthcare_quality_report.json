@@ -1,0 +1,87 @@
+{
+  "dataset": "healthcare",
+  "rows": 60,
+  "columns": 12,
+  "column_names": [
+    "month",
+    "region",
+    "hospital_count",
+    "hospital_beds",
+    "available_oxygen_percent",
+    "icu_beds",
+    "doctors",
+    "testing_capacity_tests_per_day",
+    "medicine_availability_percent",
+    "emergency_units",
+    "hospital_mortality_rate_percent",
+    "ambulances_available"
+  ],
+  "validation_status": "PASSED",
+  "schema_issues": [
+    "WARNING: Unexpected columns found: ['hospital_count', 'hospital_mortality_rate_percent', 'ambulances_available']"
+  ],
+  "data_type_issues": [],
+  "missing_values": {},
+  "total_missing_cells": 0,
+  "duplicate_rows": 0,
+  "invalid_value_issues": [],
+  "invalid_rows_count": 0,
+  "date_range": {
+    "min_date": "2021-01-01",
+    "max_date": "2025-12-01"
+  },
+  "unique_regions": 1,
+  "unique_diseases": 0,
+  "numerical_summary": {
+    "hospital_count": {
+      "min": 94.0,
+      "max": 119.0,
+      "mean": 105.3333
+    },
+    "hospital_beds": {
+      "min": 6881.0,
+      "max": 8618.0,
+      "mean": 7761.4167
+    },
+    "available_oxygen_percent": {
+      "min": 67.8,
+      "max": 88.1,
+      "mean": 78.3767
+    },
+    "icu_beds": {
+      "min": 470.0,
+      "max": 662.0,
+      "mean": 565.8833
+    },
+    "doctors": {
+      "min": 3061.0,
+      "max": 4292.0,
+      "mean": 3697.0167
+    },
+    "testing_capacity_tests_per_day": {
+      "min": 6427.0,
+      "max": 14105.0,
+      "mean": 10209.35
+    },
+    "medicine_availability_percent": {
+      "min": 74.8,
+      "max": 98.4,
+      "mean": 87.5817
+    },
+    "emergency_units": {
+      "min": 34.0,
+      "max": 53.0,
+      "mean": 43.4333
+    },
+    "hospital_mortality_rate_percent": {
+      "min": 1.01,
+      "max": 2.26,
+      "mean": 1.7435
+    },
+    "ambulances_available": {
+      "min": 44.0,
+      "max": 62.0,
+      "mean": 55.8833
+    }
+  }
+}

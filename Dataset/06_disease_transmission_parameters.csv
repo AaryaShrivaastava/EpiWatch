@@ -1,0 +1,6 @@
+disease,beta_transmission_rate,gamma_recovery_rate,baseline_reproduction_number,average_infectious_days,transmission_type
+Dengue,0.18,0.12,1.5,8,Vector-borne
+Malaria,0.16,0.11,1.45,9,Vector-borne
+Influenza,0.42,0.18,1.9,6,Respiratory
+COVID-19,0.28,0.09,2.4,12,Respiratory
+Typhoid,0.1,0.07,1.3,14,Water/Food-borne

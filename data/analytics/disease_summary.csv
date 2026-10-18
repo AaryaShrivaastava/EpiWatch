@@ -1,0 +1,6 @@
+disease,total_cases,avg_weekly_cases,max_weekly_cases,min_weekly_cases,total_deaths,total_hospitalizations,hospitalization_rate_percent,case_fatality_rate_percent,avg_positivity_percent,peak_cases,peak_date,peak_week
+COVID-19,41838,159.69,413,38,298,2640,6.31,0.71,4.21,81,2021-06-01,2021-W23
+Dengue,33537,128.0,225,24,101,2943,8.78,0.3,3.92,41,2022-09-09,2022-W37
+Influenza,49195,187.77,317,46,86,1853,3.77,0.17,4.51,60,2023-12-12,2023-W49
+Malaria,19993,76.31,140,21,112,1441,7.21,0.56,3.2,30,2022-07-28,2022-W37
+Typhoid,12255,46.77,94,16,41,676,5.52,0.33,2.45,20,2023-12-16,2023-W51

@@ -1,0 +1,3 @@
+region,disease,model,training_period,test_period,MAE,RMSE,R2,sample_count
+Bhopal,Dengue,Historical Mean (Baseline),<2024-01-01,>=2024-01-01,4.417957594886728,5.444995440896757,-0.06558172830142928,731
+Bhopal,Dengue,RandomForest (Env Features),<2024-01-01,>=2024-01-01,4.1562337737548996,5.243260731491527,0.011914257183424093,731

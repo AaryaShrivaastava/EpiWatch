@@ -1,0 +1,5 @@
+dataset,rows,columns,missing_cells,duplicates,invalid_rows,status
+epidemiological,9130,11,0,0,0,PASSED
+environmental,1826,11,0,0,0,PASSED
+healthcare,60,12,0,0,0,PASSED
+demographics,1,22,0,0,0,PASSED

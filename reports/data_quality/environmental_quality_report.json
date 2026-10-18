@@ -1,0 +1,79 @@
+{
+  "dataset": "environmental",
+  "rows": 1826,
+  "columns": 11,
+  "column_names": [
+    "date",
+    "region",
+    "temperature_c",
+    "rainfall_mm",
+    "humidity_percent",
+    "water_accumulation_index",
+    "air_quality_index",
+    "wind_speed_kmh",
+    "solar_radiation_kwh_m2",
+    "surface_water_index",
+    "pollution_index"
+  ],
+  "validation_status": "PASSED",
+  "schema_issues": [],
+  "data_type_issues": [],
+  "missing_values": {},
+  "total_missing_cells": 0,
+  "duplicate_rows": 0,
+  "invalid_value_issues": [],
+  "invalid_rows_count": 0,
+  "date_range": {
+    "min_date": "2021-01-01",
+    "max_date": "2025-12-31"
+  },
+  "unique_regions": 1,
+  "unique_diseases": 0,
+  "numerical_summary": {
+    "temperature_c": {
+      "min": 14.75,
+      "max": 39.05,
+      "mean": 26.3131
+    },
+    "rainfall_mm": {
+      "min": 0.0,
+      "max": 39.21,
+      "mean": 5.6122
+    },
+    "humidity_percent": {
+      "min": 30.35,
+      "max": 93.76,
+      "mean": 61.7239
+    },
+    "water_accumulation_index": {
+      "min": 0.705,
+      "max": 2.695,
+      "mean": 1.4026
+    },
+    "air_quality_index": {
+      "min": 42.5,
+      "max": 224.1,
+      "mean": 123.4794
+    },
+    "wind_speed_kmh": {
+      "min": 0.5,
+      "max": 15.05,
+      "mean": 6.9605
+    },
+    "solar_radiation_kwh_m2": {
+      "min": 3.35,
+      "max": 7.93,
+      "mean": 5.617
+    },
+    "surface_water_index": {
+      "min": 0.05,
+      "max": 1.5,
+      "mean": 0.658
+    },
+    "pollution_index": {
+      "min": 10.0,
+      "max": 140.13,
+      "mean": 68.522
+    }
+  }
+}

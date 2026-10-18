@@ -1,0 +1,12 @@
+{
+  "model_type": "RandomForestClassifier",
+  "calibration": "CalibratedClassifierCV(sigmoid)",
+  "n_estimators": 100,
+  "max_depth": 10,
+  "class_weight": "balanced",
+  "random_seed": 42,
+  "n_train_samples": 100,
+  "target_column": "potential_outbreak",
+  "label_type": "weak_statistical_label",
+  "version": "0.3.0"
+}

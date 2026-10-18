@@ -1,0 +1,17 @@
+{
+  "model_name": "logistic_regression",
+  "cv_roc_auc_mean": 0.348,
+  "cv_roc_auc_std": 0.1384,
+  "cv_roc_auc_scores": [
+    0.1428,
+    0.5656,
+    0.3993,
+    0.3453,
+    0.2871
+  ],
+  "train_samples": 14168,
+  "n_features": 25,
+  "training_time_seconds": 7.04,
+  "smote_applied": true,
+  "label_source": "Phase2_statistical_rolling_threshold"
+}

@@ -1,0 +1,2 @@
+alert_id,rule_id,region,triggering_metric,observed_value,threshold,timestamp
+ALT_disease_growth_Bhopal_202610d191456,disease_growth,Bhopal,forecast_growth_rate,16.57,0.15,2026-10-10T19:14:56.195324

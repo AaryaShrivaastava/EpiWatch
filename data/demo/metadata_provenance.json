@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-10-15T01:47:18.690077",
+  "date_range": [
+    "2023-01-01",
+    "2025-12-31"
+  ],
+  "regions": [
+    "Bhopal",
+    "Indore",
+    "Jabalpur",
+    "Gwalior",
+    "Ujjain"
+  ],
+  "diseases": [
+    "Dengue",
+    "Malaria",
+    "COVID-19",
+    "Influenza",
+    "Typhoid"
+  ],
+  "seed": 42,
+  "provenance": {
+    "demographics": "OFFICIAL_STATIC_REFERENCE (Census 2011 anchors)",
+    "epidemiological": "SYNTHETIC_DEMO (Controlled biological & seasonal models)",
+    "environmental": "SYNTHETIC_DEMO (Central India meteorological calibration)",
+    "healthcare": "SYNTHETIC_DEMO (WHO & NITI Aayog capacity ratios)"
+  },
+  "disclaimer": "DEMO MODE \u2014 Synthetic epidemiological data. Results are illustrative and are not live public-health surveillance."
+}

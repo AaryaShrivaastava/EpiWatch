@@ -1,0 +1,41 @@
+{
+  "Statistical Baseline (Level 1)": {
+    "model": "Statistical Baseline (Level 1)",
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1": 0.8571,
+    "roc_auc": 0.9996,
+    "pr_auc": 0.9868,
+    "false_positive_rate": 0.0102,
+    "true_positives": 54,
+    "false_positives": 18,
+    "false_negatives": 0,
+    "true_negatives": 1753
+  },
+  "Isolation Forest (Level 2)": {
+    "model": "Isolation Forest (Level 2)",
+    "precision": 0.0714,
+    "recall": 0.0556,
+    "f1": 0.0625,
+    "roc_auc": 0.7284,
+    "pr_auc": 0.0757,
+    "false_positive_rate": 0.022,
+    "true_positives": 3,
+    "false_positives": 39,
+    "false_negatives": 51,
+    "true_negatives": 1732
+  },
+  "Supervised Classifier (Level 3)": {
+    "model": "Supervised Classifier (Level 3)",
+    "precision": 0.625,
+    "recall": 0.1852,
+    "f1": 0.2857,
+    "roc_auc": 0.9668,
+    "pr_auc": 0.4966,
+    "false_positive_rate": 0.0034,
+    "true_positives": 10,
+    "false_positives": 6,
+    "false_negatives": 44,
+    "true_negatives": 1765
+  }
+}

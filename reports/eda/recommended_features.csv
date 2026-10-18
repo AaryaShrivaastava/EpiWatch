@@ -1,0 +1,10 @@
+feature,source,description,data_type,missing_percentage,recommended_for,notes
+cases_7d_avg,epidemiological,7-day rolling average of confirmed cases,float64,0.0,"forecasting, outbreak_detection",Smooths daily reporting noise
+growth_rate_7d,epidemiological,7-day percentage growth rate of cases,float64,0.0,"outbreak_detection, risk_scoring",Key velocity indicator for outbreak acceleration
+incidence_per_100k,epidemiological,"Daily case incidence per 100,000 population",float64,0.0,"risk_scoring, spatial_model",Population-normalized disease burden
+case_fatality_rate,epidemiological,Percentage ratio of deaths to cases,float64,0.0,"risk_scoring, healthcare_stress",Severity indicator
+rainfall_lag_14,environmental,14-day lagged daily rainfall in mm,float64,0.0,"environmental_model, outbreak_detection",Vector-borne mosquito breeding lag signal
+humidity_7d_avg,environmental,7-day rolling average relative humidity %,float64,0.0,"environmental_model, forecasting",Key humidity indicator
+season,temporal,"Indian seasonal category (Winter, Summer, Monsoon, Post-monsoon)",string,0.0,"forecasting, risk_scoring",Seasonal cyclical driver
+beds_per_100k,healthcare,"Hospital beds per 100,000 population",float64,0.0,"healthcare_stress, risk_scoring",Healthcare capacity baseline
+testing_utilization,healthcare,Ratio of tests performed to total daily capacity,float64,0.0,"healthcare_stress, outbreak_detection",Surveillance system pressure indicator

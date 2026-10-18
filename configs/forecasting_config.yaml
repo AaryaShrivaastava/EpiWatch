@@ -1,0 +1,72 @@
+# EpiWatch Phase 4 — Disease Trajectory Forecasting Configuration
+
+forecasting:
+  target: new_cases
+  frequency: daily   # daily or weekly
+
+  group_columns:
+    - region
+    - disease
+
+  forecast_horizons:
+    daily: [7, 14, 28]
+    weekly: [4, 8, 12]
+
+  validation:
+    method: expanding_window  # expanding_window or simple_split
+    n_folds: 3
+    primary_metric: MAE
+    train_ratio: 0.70
+    val_ratio: 0.15
+    test_ratio: 0.15
+
+  prediction_intervals:
+    confidence_level: 0.95
+    method: residual_std  # residual_std or quantile
+
+  surge_indicator:
+    threshold_percent: 20.0  # % above baseline to flag surge
+
+  trend_thresholds:
+    increasing: 5.0    # growth > +5%
+    decreasing: -5.0   # growth < -5%
+
+  models:
+    naive:
+      enabled: true
+    seasonal_naive:
+      enabled: true
+      seasonal_period: 7  # 7 for daily, 52 for weekly
+    moving_average:
+      enabled: true
+      window_size: 7
+    sarima:
+      enabled: true
+      order: [1, 1, 1]
+      seasonal_order: [1, 1, 0, 7]
+    sarimax:
+      enabled: true
+      exogenous_features:
+        - temperature_c
+        - humidity_percent
+        - rainfall_mm
+    prophet:
+      enabled: true
+    xgboost:
+      enabled: true
+      n_estimators: 100
+      max_depth: 5
+      learning_rate: 0.05
+    lstm:
+      enabled: true
+      sequence_length: 14
+      epochs: 3
+      batch_size: 32
+      hidden_dim: 16
+    gru:
+      enabled: true
+      sequence_length: 14
+      epochs: 3
+      batch_size: 32
+      hidden_dim: 16
+

@@ -1,0 +1,17 @@
+{
+  "model_name": "random_forest",
+  "cv_roc_auc_mean": 0.9717,
+  "cv_roc_auc_std": 0.0276,
+  "cv_roc_auc_scores": [
+    0.9178,
+    0.9878,
+    0.9874,
+    0.9913,
+    0.9743
+  ],
+  "train_samples": 14168,
+  "n_features": 25,
+  "training_time_seconds": 9.4,
+  "smote_applied": true,
+  "label_source": "Phase2_statistical_rolling_threshold"
+}

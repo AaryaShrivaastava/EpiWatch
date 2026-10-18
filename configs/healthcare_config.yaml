@@ -1,0 +1,57 @@
+healthcare:
+  region: "Bhopal"
+  disease: "COVID-19" # Used for filtering demand if disease-specific
+
+  data:
+    healthcare_path: "data/processed/healthcare_clean.csv"
+    epidemiological_path: "data/processed/epidemiological_clean.csv"
+    demographics_path: "data/processed/demographics_clean.csv"
+    forecast_path: "data/forecasts/disease_forecasts.csv"
+
+  population:
+    reference: "population_2011"
+    
+  assumptions:
+    hospital_los_days: 7
+    icu_los_days: 10
+    forecast_hospitalization_rate: 0.10 # 10% of cases admitted
+    forecast_icu_rate: 0.02 # 2% of cases admitted to ICU
+    
+  scoring:
+    stress_weights:
+      bed_occupancy: 30
+      icu_occupancy: 30
+      testing_utilization: 15
+      hospitalization_growth: 15
+      oxygen_utilization: 10
+      
+    stress_thresholds:
+      moderate: 40
+      high: 60
+      critical: 80
+      
+    preparedness_weights:
+      beds_per_100k: 30
+      icu_beds_per_100k: 30
+      doctors_per_100k: 20
+      oxygen_availability: 10
+      medicine_availability: 10
+      
+    preparedness_benchmarks:
+      beds_per_100k: 300 # Provisional benchmark (e.g., 3 per 1000)
+      icu_beds_per_100k: 30
+      doctors_per_100k: 100
+      
+  warnings:
+    bed_utilization_threshold: 0.85
+    icu_utilization_threshold: 0.85
+    
+  horizons:
+    short_term_days: 7
+    medium_term_days: 14
+
+  outputs:
+    analytics_dir: "data/healthcare/analytics"
+    predictions_dir: "data/healthcare/predictions"
+    reports_dir: "reports/healthcare"
+    plots_dir: "reports/healthcare/plots"

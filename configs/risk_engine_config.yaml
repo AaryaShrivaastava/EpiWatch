@@ -1,0 +1,33 @@
+risk_engine:
+  target_date: "latest" # or a specific date
+  region: "Bhopal"
+  disease: "COVID-19"
+  
+  data:
+    outbreak_path: "data/analytics/outbreak_detection_results.csv"
+    forecast_path: "data/forecasts/disease_forecasts.csv"
+    environmental_path: "data/environmental_risk/environmental_risk_scores.csv"
+    healthcare_stress_path: "data/healthcare/analytics/healthcare_stress.csv"
+    healthcare_prep_path: "data/healthcare/analytics/healthcare_preparedness.csv"
+    spatial_path: "data/spatial/region_risk_features.csv"
+    epi_path: "data/processed/epidemiological_clean.csv"
+    demographics_path: "data/processed/demographics_clean.csv"
+
+  scoring:
+    weights:
+      disease_burden: 25
+      outbreak_signal: 25
+      forecast_trajectory: 20
+      environmental_risk: 10
+      healthcare_stress: 15
+      spatial_evidence: 5
+      
+    categories:
+      low: 25
+      moderate: 50
+      high: 75
+      
+  outputs:
+    analytics_dir: "data/risk_engine"
+    reports_dir: "reports/risk_engine"
+    plots_dir: "reports/risk_engine/plots"

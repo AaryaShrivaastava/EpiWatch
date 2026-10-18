@@ -1,0 +1,20 @@
+{
+  "total_samples": 9130,
+  "train": {
+    "samples": 5475,
+    "start_date": "2021-01-01",
+    "end_date": "2023-12-31"
+  },
+  "validation": {
+    "samples": 1830,
+    "start_date": "2024-01-01",
+    "end_date": "2024-12-31"
+  },
+  "test": {
+    "samples": 1825,
+    "start_date": "2025-01-01",
+    "end_date": "2025-12-31"
+  },
+  "split_type": "chronological",
+  "leakage_prevention": "strictly_historical_features_only"
+}

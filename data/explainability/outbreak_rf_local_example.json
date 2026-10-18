@@ -1,0 +1,38 @@
+{
+  "observation_id": "row_4043",
+  "expected_value": 0.2188801111173928,
+  "actual_prediction": 0.0,
+  "top_contributions": [
+    {
+      "feature": "quarter",
+      "feature_value": -1.4762634900868168,
+      "shap_value": -0.09112612119844699,
+      "direction": "down"
+    },
+    {
+      "feature": "hospitalization_rate",
+      "feature_value": -1.0552164256013548,
+      "shap_value": -0.0791890241566216,
+      "direction": "down"
+    },
+    {
+      "feature": "rainfall_7d",
+      "feature_value": -0.7107043941431747,
+      "shap_value": 0.04489603259517935,
+      "direction": "up"
+    },
+    {
+      "feature": "rainfall_lag_7",
+      "feature_value": -0.4219587772166174,
+      "shap_value": 0.03518130711997856,
+      "direction": "up"
+    },
+    {
+      "feature": "week",
+      "feature_value": -1.6116051487210705,
+      "shap_value": -0.014323926503084294,
+      "direction": "down"
+    }
+  ],
+  "explanation_text": "The model prediction was influenced upward by rainfall 7d, rainfall lag 7. Seasonal or opposing features like quarter, hospitalization rate contributed in the opposite direction. These are model-attributed influences, not proof of causal relationships."
+}

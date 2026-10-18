@@ -1,0 +1,6 @@
+region,projected_patient_surge_7d,estimated_hospital_bed_demand,available_staffed_beds,projected_bed_deficit,projected_icu_deficit,oxygen_security_status,medicine_stock_status
+Bhopal,271,293,6375,0,0,SECURE,ADEQUATE
+Gwalior,213,230,5997,0,0,SECURE,ADEQUATE
+Indore,335,361,8737,0,0,SECURE,ADEQUATE
+Jabalpur,195,210,7041,0,0,SECURE,ADEQUATE
+Ujjain,172,185,5467,0,0,SECURE,ADEQUATE
